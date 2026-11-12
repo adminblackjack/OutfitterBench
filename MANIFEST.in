@@ -1,0 +1,8 @@
+include LICENSE README.md CONTRIBUTING.md pyproject.toml uv.lock
+include configs/*.example.yaml
+recursive-include docs *.md *.json
+recursive-include assets *.png
+recursive-include data_sources/weather *.json *.jsonl *.csv.gz *.md
+recursive-include scripts *.py
+recursive-include tests *.py *.json *.jsonl *.yaml *.csv
+global-exclude *.pyc *.pkl *.sqlite *.sqlite3 *.pem *.key

@@ -1,0 +1,20 @@
+{
+  "equipment_action_scale": 1.9265646974835349,
+  "equipment_action_top_k": 2,
+  "format": "outfitter-factorized-plan-set-feedback-v3-independent-concern-tags",
+  "line_mention_content_fidelity": 0.5,
+  "line_mention_contrast_sharpness": 3.0,
+  "line_mention_probability": 0.75,
+  "line_mention_salience_scale": 0.9681183032966039,
+  "price_action_scale": 2.398877906212523,
+  "price_curve_discount_fractions": [
+    0.1,
+    0.2,
+    0.3
+  ],
+  "response_probability": 0.6,
+  "tag_probability_ceiling": 0.85,
+  "tag_probability_floor": 0.1,
+  "tag_relevance_threshold_ratio": 1.25,
+  "tag_sharpness": 8.0
+}

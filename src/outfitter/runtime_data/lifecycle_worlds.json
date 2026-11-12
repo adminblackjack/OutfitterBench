@@ -1,0 +1,43 @@
+{
+  "claim_boundary": "K/A/D/V are benchmark structural priors and relative tiers; no real-world rental truth or payback-derived rent is claimed",
+  "format": "outfitter-v9-joint-sensitivity-worlds-v1",
+  "release_status": "candidate_requires_joint_economic_calibration",
+  "worlds": [
+    {
+      "demand_world_id": "conservative",
+      "interpretation": "durable assets with lower rental-convenience value",
+      "lifecycle_multipliers": {
+        "cleaning_work": 0.9,
+        "damage_hazard": 0.8,
+        "damage_severity": 0.9,
+        "lifetime_k": 1.2,
+        "storage_burden": 0.75
+      },
+      "world_id": "conservative"
+    },
+    {
+      "demand_world_id": "base",
+      "interpretation": "central benchmark structural assumptions",
+      "lifecycle_multipliers": {
+        "cleaning_work": 1.0,
+        "damage_hazard": 1.0,
+        "damage_severity": 1.0,
+        "lifetime_k": 1.0,
+        "storage_burden": 1.0
+      },
+      "world_id": "base"
+    },
+    {
+      "demand_world_id": "convenience-heavy",
+      "interpretation": "fragile assets, stronger date-guarantee value, and tighter storage",
+      "lifecycle_multipliers": {
+        "cleaning_work": 1.15,
+        "damage_hazard": 1.35,
+        "damage_severity": 1.15,
+        "lifetime_k": 0.8,
+        "storage_burden": 1.5
+      },
+      "world_id": "convenience-heavy"
+    }
+  ]
+}

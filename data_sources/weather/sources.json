@@ -1,0 +1,60 @@
+{
+  "dataset_id": "beijing-2023-noaa-era5-v1",
+  "files": {
+    "noaa-54511099999-2022.csv.gz": {
+      "bytes": 570224,
+      "license_url": "https://registry.opendata.aws/noaa-isd/",
+      "provider": "NOAA Integrated Surface Database",
+      "sha256": "5ac3c0dbb7b09dd78273e184090a5aa5ee3fdfc98ff5ae7ca68e5a037a9f8fcc",
+      "stored_as": "gzip of the complete original CSV; mtime=0",
+      "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2022/54511099999.csv"
+    },
+    "noaa-54511099999-2023.csv.gz": {
+      "bytes": 568724,
+      "license_url": "https://registry.opendata.aws/noaa-isd/",
+      "provider": "NOAA Integrated Surface Database",
+      "sha256": "ab93a58e514c3274ac28d7398e0a3716cc0ae83e220fd3e00294dc059a7bb9f5",
+      "stored_as": "gzip of the complete original CSV; mtime=0",
+      "url": "https://noaa-global-hourly-pds.s3.amazonaws.com/2023/54511099999.csv"
+    },
+    "open-meteo-era5-beijing-2023.json": {
+      "attribution_url": "https://open-meteo.com/",
+      "bytes": 221931,
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "parameters": {
+        "daily": "temperature_2m_mean,precipitation_sum,snowfall_sum,cloud_cover_mean",
+        "end_date": "2023-12-31",
+        "hourly": "snow_depth",
+        "latitude": "39.9042",
+        "longitude": "116.4074",
+        "models": "era5",
+        "start_date": "2023-01-01",
+        "timezone": "Asia/Shanghai"
+      },
+      "provider": "Open-Meteo / Copernicus ERA5",
+      "sha256": "4fe6a6c77ae3368966e9bdbddd09634f3d8735a4d9d8c9994687979d05c8143b",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.9042&longitude=116.4074&start_date=2023-01-01&end_date=2023-12-31&timezone=Asia%2FShanghai&models=era5&daily=temperature_2m_mean%2Cprecipitation_sum%2Csnowfall_sum%2Ccloud_cover_mean&hourly=snow_depth"
+    },
+    "open-meteo-era5-land-snow-beijing-2023.json": {
+      "attribution_url": "https://open-meteo.com/",
+      "bytes": 210512,
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "parameters": {
+        "end_date": "2023-12-31",
+        "hourly": "snow_depth",
+        "latitude": "39.9042",
+        "longitude": "116.4074",
+        "models": "era5_land",
+        "start_date": "2023-01-01",
+        "timezone": "Asia/Shanghai"
+      },
+      "provider": "Open-Meteo / Copernicus ERA5-Land",
+      "sha256": "a5298f94a28e7dd71cd3235fb7fb07803b58c9f13a045dab330b0062d7e2775e",
+      "url": "https://archive-api.open-meteo.com/v1/archive?latitude=39.9042&longitude=116.4074&start_date=2023-01-01&end_date=2023-12-31&timezone=Asia%2FShanghai&models=era5_land&hourly=snow_depth"
+    }
+  },
+  "note": "2022 NOAA input supplies the UTC/local-year boundary; only local 2023 enters the build.",
+  "recorded_at_utc": "2026-11-12T13:16:24.684696+00:00"
+}

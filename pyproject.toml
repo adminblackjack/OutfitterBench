@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "outfitter-bench"
+version = "0.54.1"
+readme = "README.md"
+license = "Apache-2.0"
+license-files = ["LICENSE"]
+description = "A deterministic long-horizon outdoor-equipment rental benchmark"
+requires-python = ">=3.11,<3.14"
+dependencies = [
+  "httpx[socks]>=0.27,<1",
+  "matplotlib>=3.8,<4",
+  "numpy>=1.26,<3",
+  "openai>=2.0,<3",
+  "pandas>=2.0,<4",
+  "pyarrow==23.0.1",
+  "PyYAML>=6.0,<7",
+  "requests[socks]>=2.31,<3",
+  "scipy>=1.15,<2",
+  "jsonschema>=4.23,<5",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+outfitter-bench = "outfitter.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+include = ["outfitter*"]
+
+[tool.setuptools.package-data]
+outfitter = ["runtime_data/*", "DATA_LICENSE.md", "evaluation/README.md"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

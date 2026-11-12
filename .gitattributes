@@ -1,0 +1,5 @@
+# Runtime and legacy fixture hashes cover exact bytes, including CSV CRLF.
+/src/outfitter/runtime_data/** -text
+/data_sources/weather/** -text
+/tests/fixtures/** -text
+*.csv whitespace=cr-at-eol

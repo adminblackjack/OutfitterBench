@@ -1,0 +1,911 @@
+{
+  "actor_interface_slimming": {
+    "actor_integrity_identifiers": "omit-hash-sha256-and-fingerprint-keys-v1",
+    "capacity_intervals": "merge-adjacent-equal-values-v1",
+    "capacity_mutation_result": "touched-offers-current-and-future-only-v1",
+    "capacity_query_result": "requested-offers-and-date-window-only-v1",
+    "customer_model_changed": false,
+    "economics_changed": false,
+    "format": "compact-hash-free-actor-interface-v1",
+    "internal_integrity_checks_changed": false,
+    "scoring_changed": false
+  },
+  "actor_interface_slimming_policy": "compact-hash-free-actor-interface-v1",
+  "adaptive_pairwise_runtime_builder": "outfitter-adaptive-pairwise-runtime-builder-v1",
+  "assortment_projection": {
+    "rental_and_retail": "complete shared catalog and existing full-store demand",
+    "rental_kernel": "shared",
+    "rental_only": "durable offers and rental demand only; retail add-ons and the retail-only supply stream are absent",
+    "source_catalog": "one shared full catalog"
+  },
+  "autonomous_rentals_policy": "autonomous-occupancy-joint-demand-bounded-budget-v1",
+  "benchmark_calendar_year": 2026,
+  "business_id_policy": {
+    "assignment_id_visibility": "internal only",
+    "block_id_visibility": "internal only",
+    "change_id": "global sequential change-NNN",
+    "commitment_id": "global sequential reservation-NNN",
+    "historical_runs_rewritten": false,
+    "line_id": "request-local line-NN",
+    "request_id": "stable trip-derived rr-DDD-AA-NNNN"
+  },
+  "business_manual_policy": "public-business-manual-v1",
+  "calibrated_arrival_scale": 2.2,
+  "capacity_summary_audit_runtime_builder": "outfitter-capacity-summary-audit-runtime-builder-v1",
+  "capacity_surface_runtime_builder": "outfitter-capacity-surface-runtime-builder-v1",
+  "catalog_offers": 85,
+  "channel_demand_model": {
+    "agent_observes_hidden_channel": false,
+    "deadline_context": {
+      "agent_observes_internal_deadline_parameters": false,
+      "channel_heterogeneity": "bounded customer-level channel tastes; profile Gumbel remains conditional on store entry only",
+      "consumer_online_delivery_model": "independent frozen CDF by demand world",
+      "mapping_policy": {
+        "emergency_rain": "day 0; rainy/snowy missed-occasion loss calibrated to a bounded positive-margin disposable-poncho curve",
+        "optional_retail": "flexible; no deadline surplus",
+        "other_required_unplanned_retail": "day 1 with service-specific importance",
+        "required_planned_retail": "day 3",
+        "required_supply_water": "day 0"
+      },
+      "need_horizon_days": [
+        0,
+        1,
+        3,
+        null
+      ],
+      "online_unit_price_anchor": "retained at full weight as shared product-value evidence; deadline surplus enters only immediate fulfillment and lateness loss",
+      "rental_booking_lead_days": [
+        0,
+        14
+      ],
+      "rental_context": "duration, pickup lead, forecast adversity/uncertainty, trip importance, future-use expectation, storage burden, return burden",
+      "rental_formula_changed": true,
+      "scope": "retail deadlines and contextual rental channel choice"
+    },
+    "formal_worlds": [
+      "base",
+      "conservative",
+      "convenience-heavy"
+    ],
+    "format": "outfitter-exact-offer-channel-demand-v5-request-bundle",
+    "multi_unit_policy": {
+      "inventory_utility_cap": "requested customer units",
+      "optional": "partial fulfillment with compatible-profile mixing",
+      "required": "full fulfillment with compatible-profile mixing"
+    },
+    "online_price_generates_natural_demand": false,
+    "parameter_calibration": "channel_parameter_calibration.json",
+    "primary_world": "base",
+    "quantity_value_scope": [
+      "rental:camp_chair",
+      "rental:sleeping_bag",
+      "rental:sleeping_pad"
+    ],
+    "rental_customer_choice_scope": "request_bundle",
+    "request_budget": "mean_one_lognormal_shared_within_request",
+    "supplier_cost_enters_customer_demand": false
+  },
+  "channel_runtime_builder": "outfitter-exact-offer-channel-runtime-builder-v13",
+  "choice_groups": 22,
+  "complete_contract_feedback_runtime_builder": "outfitter-complete-contract-feedback-runtime-builder-v1",
+  "consumer_online_offer_policy": {
+    "agent_visibility": "the manager sees ordinary source listing facts, never their hidden role in customer channel choice",
+    "retail_unit_comparison": "complete consumer unit",
+    "scope": "verified exact source SKU",
+    "transaction_unit": "complete source package",
+    "verified_at": "2026-08-22"
+  },
+  "content_sha256": {
+    "agent_visible_product_data.csv": "d9b5567a77cec35c5c0ec1180fb3e3e10c7d3f3ee0eb3c7e0a38093e8a7c837d",
+    "catalog.jsonl": "efcf8507465f9750302ebd62f24b2a50f401605a3605d11d14aa0c8da9b3d7b3",
+    "channel_demand_model.json": "22731258f90c1a3da80c402f8361022833645b64364ed4bb6ae4470d9244e284",
+    "channel_parameter_calibration.json": "293bdb300519c3d6dae7eafc1fc9776d04a9f3e9385709e4511485c9043706b9",
+    "demand_model.json": "99a322c336657ec7b50833a4ae3b9130abc9f13b09ffe128f1b8c063f8cbe3c7",
+    "initial_assets.jsonl": "8657e4f15f527c3e6680c4a4a9caa6ddb38e3d04b7c0c10beac15ea94b75df92",
+    "initial_prices.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "initial_retail_inventory.jsonl": "7625d843ea1e865643a7e0f0dec3fbc3f8947d98159a263fd0e9c3a0796b7858",
+    "lifecycle_economic_scales.json": "6f753960918ac1014f55e6be37df3dbc9ae7125fa3adcb13ecfeb3da5ccbd02a",
+    "lifecycle_factors.jsonl": "65420f1b1c7f37ebc99462d0088afcfed1d2e7d96429a74f614a1b795ef07ddc",
+    "lifecycle_worlds.json": "cb1464d34f8ece0c1e05c556e28ef9f13c6cb59ed1b58a022770b41e6a0ca3a0",
+    "market_rules.json": "0905f3bf115c4dbdf6c358612479db242d16b885f305858b5bc1d6e099beacae",
+    "offer_id_registry.json": "921540283d1403ac2c68eacf2930776a669f9e90e0d2bdea138e4eed6f74eca9",
+    "rainwear_size_resolutions.jsonl": "77dbfd86792e4cdb3e90b24fbd7825e5228504188e2725bbe7be2f918c16376e",
+    "reservation_plan_set_feedback.json": "a6a0595bd215a1a694b1c12458785d50d367d6df45673c573551655ac80f9c92",
+    "reservation_promise_profiles.json": "c614bcd07fc19c6c51a41f04acb4afedb337e6cd714a014f22a564eac6b32e9f",
+    "sales_model_product_data.csv": "29e0af0c6a195d7943a845119ba38fde005c83960c69cbe3de9a2444d4131389",
+    "warehouse_capacity_weights.json": "9931b481506a03a3b647e69a8277b7aa891af0eedaec7b489648f7c6cb6534e2",
+    "weather.jsonl": "205d03e21c3ed555b64820c3e052925adf53227320ac410e41d34cb876fad278",
+    "weather_finalinfo.pkl": "518c9fe5a277623ed52a18a869dfe2ceb4d8e7ef8522e99dff0524ad011d86ab"
+  },
+  "contingency_actor_interface": {
+    "customer_model_changed": false,
+    "economics_changed": false,
+    "format": "contingency-actor-interface-v1",
+    "inbox": "updates_separate_from_actionable_reports",
+    "maximum_public_capacity_inclusive_dates": 15,
+    "maximum_public_forecast_inclusive_dates": 15,
+    "rental_asset_schema": "explicit_mutually_exclusive_view_v1",
+    "reservation_view": "public_version_eligibility_and_same_profile_space",
+    "scoring_changed": false
+  },
+  "contingency_actor_interface_policy": "contingency-actor-interface-v1",
+  "contract_state_runtime_builder": "outfitter-contract-state-runtime-builder-v1",
+  "core_release_id": "outfitter-v47-autonomous-rental-core-r3",
+  "demand_model": {
+    "formal_use": "control world only",
+    "format": "outfitter-bounded-reservation-demand-v1",
+    "source": "demand_model.json",
+    "supplier_cost_enters_customer_demand": false
+  },
+  "durable_acquisition_budget": {
+    "accepted_durable_order_lines_consume_budget": true,
+    "accounting": "fully delivered durable value is used; accepted in-transit durable value is committed",
+    "initial_assets_consume_budget": false,
+    "replenishment": "none",
+    "retail_order_lines_consume_budget": false,
+    "supplier_cancellation_or_refund_mechanism": false,
+    "unused_budget_has_terminal_value": false
+  },
+  "durable_acquisition_budget_policy": "revolving-gross-durable-capital-envelope-v1",
+  "durable_capital_policy": {
+    "asset_basis": "historical_purchase_basis_integer_cents",
+    "capital_limit": "initial_owned_durable_basis_plus_additional_headroom",
+    "committed_scope": "accepted_unreceived_owned_durable_units",
+    "configured_budget_semantics": "additional_durable_capital_headroom",
+    "deployed_scope": "owned_durable_assets_until_release_effective_day",
+    "format": "revolving-gross-durable-capital-envelope-v1",
+    "release_delay_days": 1,
+    "release_paths": [
+      "service_life_retirement_and_disposal",
+      "manager_retirement_and_disposal",
+      "dealer_sale"
+    ],
+    "retail_order_lines_in_scope": false,
+    "revenue_increases_limit": false,
+    "sale_proceeds_increase_limit": false,
+    "supplier_cancellation_mechanism_added": false,
+    "supplier_trial_assets_in_scope": false,
+    "unused_headroom_has_terminal_value": false
+  },
+  "economic_balance_calibration": {
+    "changed": true,
+    "claim_boundary": "candidate benchmark difficulty control, not an observed real-world operating cost",
+    "formal_daily_fee": 15.0,
+    "selection_rule": "joint 28-day and 200-day scripted bounded-loss QA; not inferred from hidden customer willingness to pay",
+    "source_formal_daily_fee": 20.0
+  },
+  "environment_protocol": "outfitter-seasonal-v47-autonomous-rentals",
+  "extension_cash_audit_runtime_builder": "outfitter-extension-cash-audit-runtime-builder-v1",
+  "factorized_feedback_tags_runtime_builder": "outfitter-factorized-feedback-tags-runtime-builder-v1",
+  "factorized_plan_set_runtime_builder": "outfitter-factorized-plan-set-runtime-builder-v1",
+  "formal_daily_fee": 15.0,
+  "formal_max_days": 200,
+  "formal_runoff_days": 14,
+  "formal_weather_start_day": 91,
+  "format": "outfitter-runtime-v13-reservation-promise-profiles",
+  "inherited_calibration_is_v47_evidence": false,
+  "initial_liquidity": {
+    "baseline_bankrupt_runs": 0,
+    "fourteen_day_fee_reserve": 280.0,
+    "minimum_observed_drawdown_for_one_naive_survivor": 4510.51,
+    "minimum_rounding_floor": 1000,
+    "observed_p95_peak_cash_drawdown": 1608.56,
+    "p95_seven_day_refund_pressure": 1237.4,
+    "policy": "liquidity pressure only; selected from frozen-demand scripted survival/drawdown QA, not a score denominator",
+    "recommended_initial_cash_rounded": 5000,
+    "refund_pressure": "pending 200-day recalibration after seller-specific delivery times",
+    "three_median_group_experiments": 91.73
+  },
+  "initial_price_policy": "all offers start unpriced; the manager must post positive offer-level prices for walk-ins; every advance inquiry requires a separate, complete explicit one-time line quote or whole-request decline",
+  "lifecycle_economics": {
+    "claim_boundary": "benchmark free scales; not verified real-world rental-industry parameters",
+    "condition_is_independent_of_wear": true,
+    "durable_offer_count": 46,
+    "enabled_config_required": true,
+    "factor_file": "lifecycle_factors.jsonl",
+    "initial_age_cohort_policy": "preserve base day/cycle usage ratios when projecting world-specific service-life limits",
+    "initial_maintenance_anchor_policy": "stable asset-ID phase across interval plus due window; no wear reset",
+    "registered_worlds": [
+      "base",
+      "conservative",
+      "convenience-heavy"
+    ],
+    "scale_status": "candidate_requires_joint_economic_calibration",
+    "scales_file": "lifecycle_economic_scales.json",
+    "worlds_file": "lifecycle_worlds.json"
+  },
+  "lifecycle_runtime_builder": "outfitter-lifecycle-runtime-builder-v3",
+  "liquidation_accountability_runtime_builder": "outfitter-liquidation-accountability-runtime-builder-v1",
+  "liquidation_dealer": {
+    "automatic_insolvency_sale": false,
+    "environment_protocol": "outfitter-seasonal-v12-compact-ids-pagination",
+    "in_transit_retail_sellable": false,
+    "retail_quote": "ROUND_HALF_UP(0.50 * current average acquisition unit cost, CNY 0.01) per consumer unit",
+    "retail_terminal_valuation_uses_same_quote": true,
+    "rolling_depth_market": true,
+    "sellable_rental_statuses": [
+      "available",
+      "damaged"
+    ],
+    "tool_interface_version": 10,
+    "tools": [
+      "view_liquidation_quotes",
+      "sell_to_liquidation_dealer"
+    ],
+    "transaction_policy": "sales validate and commit atomically; a read-only quote with invalid input returns all invalid-item diagnostics at once"
+  },
+  "liquidation_policy": "flat_nominal_per_unit_v1",
+  "noisy_line_mention_runtime_builder": "outfitter-noisy-line-mention-runtime-builder-v1",
+  "offer_id_policy": {
+    "append_only": true,
+    "catalog_reorder_renumbers": false,
+    "format": "outfitter-offer-id-registry-v1",
+    "identifier_format": "offer-NNN",
+    "public_id_projection_changes_random_tape": false,
+    "random_tape_identity": "internal first_seen_source_offer_id; never exposed by tools",
+    "registry_file": "offer_id_registry.json",
+    "removed_numbers_reused": false
+  },
+  "offers_by_choice_group": {
+    "rental:camp_chair|comfort_chair": 4,
+    "rental:camp_chair|lightweight_chair": 3,
+    "rental:camp_cookware|camp_cookware": 4,
+    "rental:camp_lantern|camp_lantern": 4,
+    "rental:camp_table|camp_table": 4,
+    "rental:sleeping_bag|three_season_bag": 4,
+    "rental:sleeping_bag|warm_weather_bag": 4,
+    "rental:sleeping_pad|air_mattress": 4,
+    "rental:sleeping_pad|closed_cell_foam_pad": 4,
+    "rental:sleeping_pad|self_inflating_pad": 4,
+    "rental:tent|compact_tent": 4,
+    "rental:tent|family_tent": 3,
+    "retail:bottled_water|bottled_water": 4,
+    "retail:cleaning_wipes|cleaning_wipes": 4,
+    "retail:energy_snacks|compressed_ration": 4,
+    "retail:energy_snacks|snack_portion": 3,
+    "retail:garbage_bags|garbage_bags": 4,
+    "retail:instant_food|instant_food": 4,
+    "retail:rain_gear|disposable_poncho": 4,
+    "retail:rain_gear|reusable_rainwear": 4,
+    "retail:repellent|topical_repellent": 4,
+    "retail:repellent|wearable_repellent": 4
+  },
+  "perceived_quality_policy": "operational_estimate panel majority",
+  "pickup_priority_runtime_builder": "outfitter-pickup-priority-runtime-builder-v1",
+  "plan_set_feedback_model": {
+    "claim_boundary": "noisy coarse reported concerns, not true reasons, thresholds, best actions, transaction guarantees, or manager advice",
+    "equipment_action_scale": 1.9265646974835349,
+    "equipment_action_top_k": 2,
+    "equipment_evidence": "top2_mean_public_line_replacement_gain_approx_fixed_rent_deposit",
+    "file": "reservation_plan_set_feedback.json",
+    "format": "outfitter-factorized-plan-set-feedback-v3-independent-concern-tags",
+    "line_mention_content_fidelity": 0.5,
+    "line_mention_contrast_sharpness": 3.0,
+    "line_mention_probability": 0.75,
+    "line_mention_salience_scale": 0.9681183032966039,
+    "price_action_scale": 2.398877906212523,
+    "price_curve_discount_fractions": [
+      0.1,
+      0.2,
+      0.3
+    ],
+    "price_evidence": "mean_complete_repricing_gain_10_20_30pct",
+    "response_probability": 0.6,
+    "scope": "empty_customer_authorized_plan_set_only",
+    "tag_probability_ceiling": 0.85,
+    "tag_probability_floor": 0.1,
+    "tag_relevance_threshold_ratio": 1.25,
+    "tag_sharpness": 8.0
+  },
+  "proactive_contingency": {
+    "calendar_values": {
+      "family": {
+        "public_holiday": 0.5,
+        "school_holiday": 0.4,
+        "weekday": -0.45,
+        "weekend": 0.2
+      },
+      "group": {
+        "public_holiday": 0.4,
+        "school_holiday": 0.15,
+        "weekday": -0.2,
+        "weekend": 0.2
+      },
+      "solo": {
+        "public_holiday": 0.15,
+        "school_holiday": 0.05,
+        "weekday": 0.0,
+        "weekend": 0.08
+      }
+    },
+    "counteroffer_scope": "date_only",
+    "customer_cancellation_reputation_effect": "none",
+    "customer_cancellation_settlement": "manager_cancellation_terms",
+    "equipment_change_scope": "same_promise_profile_exact_offer",
+    "financial_terms": "locked_rent_prepayment_and_deposit_unchanged",
+    "format": "proactive-reservation-contingency-v1",
+    "inventory_feasibility_evaluated": false,
+    "maximum_batch_size": 25,
+    "maximum_proposal_lead_days": 14,
+    "maximum_proposals_per_inquiry": 2,
+    "maximum_successful_inquiries_per_commitment": 1,
+    "minimum_notice_days": 2,
+    "parameter_grids": {
+      "accept_delta_coefficient": [
+        1.0,
+        1.5,
+        2.0
+      ],
+      "accept_flex_coefficient": [
+        0.4,
+        0.8
+      ],
+      "accept_intercept": [
+        -2.4,
+        -2.0,
+        -1.6
+      ],
+      "accept_notice_coefficient": [
+        0.08,
+        0.16
+      ],
+      "cancel_badness_coefficient": [
+        0.8,
+        1.2
+      ],
+      "cancel_flex_protection": [
+        0.4,
+        0.8
+      ],
+      "cancel_intercept": [
+        -4.0,
+        -3.5,
+        -3.0
+      ],
+      "cancel_late_coefficient": [
+        0.4,
+        0.8
+      ],
+      "cancel_shift_coefficient": [
+        0.2,
+        0.4
+      ],
+      "counteroffer_base": [
+        0.03,
+        0.06
+      ],
+      "counteroffer_flex_coefficient": [
+        0.08,
+        0.14
+      ],
+      "counteroffer_notice_coefficient": [
+        0.02,
+        0.06
+      ],
+      "equipment_scale": [
+        0.25,
+        0.5,
+        1.0
+      ],
+      "equipment_weight": [
+        0.5,
+        1.0
+      ],
+      "initial_consideration_flex_slope": [
+        0.5,
+        0.7
+      ],
+      "initial_consideration_intercept": [
+        0.1,
+        0.2
+      ],
+      "initial_sampling_temperature": [
+        1.0,
+        2.0
+      ],
+      "initial_tolerance_base": [
+        0.0,
+        0.1
+      ],
+      "initial_tolerance_flex_slope": [
+        0.2,
+        0.4
+      ],
+      "shift_weight": [
+        0.04,
+        0.07,
+        0.1
+      ],
+      "weather_weight": [
+        0.6,
+        0.9,
+        1.2
+      ]
+    },
+    "parameters": {
+      "accept_delta_coefficient": 1.5,
+      "accept_flex_coefficient": 0.8,
+      "accept_intercept": -2.0,
+      "accept_notice_coefficient": 0.16,
+      "cancel_badness_coefficient": 1.2,
+      "cancel_flex_protection": 0.8,
+      "cancel_intercept": -3.5,
+      "cancel_late_coefficient": 0.8,
+      "cancel_probability_cap": 0.15,
+      "cancel_shift_coefficient": 0.2,
+      "counteroffer_base": 0.03,
+      "counteroffer_flex_coefficient": 0.14,
+      "counteroffer_notice_coefficient": 0.06,
+      "counteroffer_probability_cap": 0.25,
+      "equipment_scale": 0.5,
+      "equipment_weight": 0.5,
+      "initial_consideration_flex_slope": 0.7,
+      "initial_consideration_intercept": 0.1,
+      "initial_sampling_temperature": 2.0,
+      "initial_tolerance_base": 0.1,
+      "initial_tolerance_flex_slope": 0.4,
+      "shift_weight": 0.07,
+      "weather_weight": 0.9
+    },
+    "report_valid_days": 1,
+    "response_delay_days": 1,
+    "weather_adversity": {
+      "cloudy": 0.18,
+      "cold": 0.45,
+      "hot": 0.35,
+      "rainy": 0.82,
+      "snowy": 1.0,
+      "sunny": 0.0
+    }
+  },
+  "proactive_contingency_policy": "proactive-reservation-contingency-v1",
+  "product_visibility_exports": {
+    "agent_visible_projection": "agent_visible_product_data.csv",
+    "agent_visible_source": "ToolExecutor.inspect_offer over initial runtime state",
+    "internal_sales_model": "sales_model_product_data.csv"
+  },
+  "quote_workspace_runtime_builder": "outfitter-quote-workspace-runtime-builder-v1",
+  "rainwear_size_policy": {
+    "compatible_inventory_projection": true,
+    "formal_request_sizes": [
+      "adult",
+      "child"
+    ],
+    "resolution_file": "rainwear_size_resolutions.jsonl",
+    "universal_offer_size": "adult_child_universal",
+    "unknown_request_size_allowed": false
+  },
+  "release_status": "v47-autonomous-candidate-unvalidated",
+  "rental_capacity_surface": {
+    "cleaning_projection": "current_global_fifo_jobs_only",
+    "future_return_jobs_included": false,
+    "in_transit_actual_delivery_visible": false,
+    "legacy_calendar_agent_visible": false,
+    "timeline_computes_feasibility": false,
+    "tool": "view_rental_capacity",
+    "views": [
+      "timeline",
+      "service_jobs"
+    ]
+  },
+  "rental_pricing_calibration": {
+    "claim_boundary": "candidate benchmark difficulty scale; not observed market truth",
+    "rental_contract_cash_salience": 2.2,
+    "scope": "rental store-contract cash penalty only; retail unchanged",
+    "supplier_cost_enters_customer_demand": false,
+    "target_payback_enters_customer_demand": false
+  },
+  "request_bundle_choice_runtime_builder": "outfitter-request-bundle-choice-runtime-builder-v1",
+  "reservation_calendar_peak_multiplier": 1.4,
+  "reservation_difficulty_policy": "coherent-trip-partial-fulfillment-and-first-day-tariff-v1",
+  "reservation_failure_settlement": {
+    "format": "outfitter-reservation-failure-settlement-v1",
+    "manager_cancellation": {
+      "locked_rent_rate": 0.5,
+      "notice_decay_days": 7,
+      "rent_notice_floor": 0.25,
+      "service_base": 10.0,
+      "service_notice_floor": 0.35,
+      "service_unit_day_rate": 2.0
+    },
+    "pickup_failure": {
+      "locked_rent_rate": 1.0,
+      "service_base": 15.0,
+      "service_unit_day_rate": 3.0
+    },
+    "prepayment_refund_is_separate": true,
+    "rounding": "cent_half_up_after_max"
+  },
+  "reservation_mechanism": {
+    "accepted_reschedule_resets_forecast_baseline": true,
+    "asset_binding": "pickup_morning_primary_first_disjunction",
+    "authorization_is_exhaustive": false,
+    "authorized_offer_count": [
+      1,
+      3
+    ],
+    "booking_lead_days": [
+      1,
+      14
+    ],
+    "bundle_customer_latents": "request-level segment, forecast trust, price sensitivity, and return burden; shared storage/reuse bases with category adjustments; line-level product preferences",
+    "bundle_lines": [
+      2,
+      4
+    ],
+    "capacity_surface": {
+      "cleaning_projection": "current_global_fifo_jobs_only",
+      "future_return_jobs_included": false,
+      "in_transit_actual_delivery_visible": false,
+      "legacy_calendar_agent_visible": false,
+      "timeline_computes_feasibility": false,
+      "tool": "view_rental_capacity",
+      "views": [
+        "timeline",
+        "service_jobs"
+      ]
+    },
+    "cash_and_calendar_timing": "confirmed_plan_only",
+    "channel_choice": "after_manager_quote",
+    "confirmation": "single auto; multiple manager choice; day-end customer-preferred auto",
+    "customer_choice": "each internally formed complete store plan independently versus one frozen outside plan and abandonment",
+    "decision_horizon_semantics": "last_manager_action_demand_and_pickup_day",
+    "decision_to_runoff_rentals_allowed": true,
+    "equipment_feedback_line_mention": "optional_single_subjective_request_local_line",
+    "extension_billing_scope": "fulfilled_lines_only",
+    "extension_line_rent_deltas_public": true,
+    "extension_rent_collection_timing": "immediate_on_acceptance",
+    "extension_rent_delta": "frozen_at_request_creation_v1",
+    "failure_settlement_policy": "outfitter-reservation-failure-settlement-v1",
+    "feedback_reads_inventory_or_economics": false,
+    "hard_reschedule_request_cap": null,
+    "implicit_cartesian_product": false,
+    "inquiry_generation": "routed_trip_before_channel_choice_inventory_independent",
+    "inquiry_latent_price_ceiling": "not_generated",
+    "latent_acceptance": "hidden_customer_price_ceiling",
+    "latent_snapshots": "immutable inquiry truth separated from post-quote public authorization and hidden recovery sets",
+    "line_mention_guarantees_repair_or_transaction": false,
+    "line_mention_is_failed_line_truth": false,
+    "line_mention_reads_inventory_or_economics": false,
+    "line_mixing": false,
+    "main_reservation_share": 0.65,
+    "manager_cancellation_tool": "cancel_reservation_commitment",
+    "maximum_internal_plan_count": 24,
+    "maximum_returned_authorized_plan_count": 3,
+    "negative_feedback_scope": "empty_authorized_set_only",
+    "no_show_in_main": false,
+    "optional_missing_credit_rate": 1.0,
+    "optional_quote_acceptance": "explicit_quote_or_omit_per_contract",
+    "outside_resolution_disclosed": false,
+    "post_quote_fulfillment_surface_separate": true,
+    "preauthorized_complete_plan_recovery": "explicit_manager_selection_only",
+    "prepayment_rate": 0.25,
+    "proactive_manager_cancellation": true,
+    "public_authorization": "quoted_candidate_survivors",
+    "public_calendar": "raw facts without feasibility verdict",
+    "quote_actions": [
+      "explicit_complete_quote",
+      "decline"
+    ],
+    "quote_batch_validation": "atomic_all_invalid_items",
+    "quote_line_completeness": "required one-or-two quote options; optional zero-to-two quote options plus exactly one omit",
+    "quote_option_surface": "normalized_request_level_workspace",
+    "quote_rounds": 1,
+    "quote_unit": "factorized_line_exact_profile_price_options",
+    "quote_workspace_default_offer_projection": "compact",
+    "quote_workspace_dynamic_operations_included": false,
+    "quote_workspace_frozen_membership_scope": "request_line_promise_profile",
+    "quote_workspace_pagination": "complete_request_keyset",
+    "quote_workspace_recommendation_or_feasibility": false,
+    "recovery_plan_line_price_protection": "lower_of_two_authorized_amounts",
+    "reported_assessment_is_true_reason": false,
+    "reported_concern_tags": [
+      "price_value",
+      "equipment_configuration"
+    ],
+    "reported_concern_tags_can_cooccur": true,
+    "request_level_terms": [
+      "absolute contract cash",
+      "aggregate deposit friction",
+      "store service/date guarantee",
+      "return burden",
+      "outside delivery friction/risk"
+    ],
+    "required_pickup_atomic": true,
+    "required_quote_acceptance": "atomic_complete_bundle",
+    "reschedule_nondeterioration_decay_after_one": 0.3,
+    "reschedule_nondeterioration_decay_after_two": 0.075,
+    "reschedule_probability_model": "first_unchanged_incremental_weather_repeat_decay_v1",
+    "reschedule_same_forecast_counts_as_new_deterioration": false,
+    "reschedule_weather_component_decay": 1.0,
+    "reservation_financial_projection": "gross_history_plus_live_balances_v1",
+    "reservation_record_surface": {
+      "detail_default_sections": [
+        "current_terms",
+        "fulfillment"
+      ],
+      "detail_sections": [
+        "current_terms",
+        "submitted_quote",
+        "customer_authorization",
+        "fulfillment",
+        "changes",
+        "risk"
+      ],
+      "page_limit_default": 10,
+      "page_limit_maximum": 10,
+      "quote_history": "normalized_line_options_and_plan_references"
+    },
+    "reservation_rent_cash_history": "gross_components_plus_computed_gross_and_net_v1",
+    "reservation_term_projection": "immutable_inquiry_plus_current_commitment_v1",
+    "residual_concern": "other_or_unclear",
+    "residual_concern_can_cooccur": false,
+    "risk_recovery": "manager_confirmed_full_locked_plan_replay",
+    "runoff_semantics": "returns_cleaning_settlement_and_final_scoring",
+    "security_deposit": "confirmed_primary_terms_locked_after_quote",
+    "service_reputation_experiment": "outfitter-reservation-service-reputation-v1",
+    "service_reputation_formal_default_enabled": false,
+    "stress_reservation_share": 0.8,
+    "summary_format": "outfitter-summary-v2-auditable",
+    "summary_horizon_fields": [
+      "decision_horizon_day",
+      "runoff_end_day"
+    ],
+    "summary_max_days_omitted": true,
+    "summary_structured_blocks": [
+      "cash_flow",
+      "reservation_rent_cash",
+      "value_change"
+    ],
+    "unconfirmed_plan_fallback": false,
+    "walk_in_capacity_batch_order_dependency": false,
+    "walk_in_capacity_batch_validation": "all_items_and_conflicts_v1",
+    "walk_in_capacity_clear_historical_prefix": "ignored_without_history_rewrite",
+    "walk_in_capacity_excludes_reservations": true,
+    "walk_in_capacity_infers_cleaning_buffer": false,
+    "walk_in_capacity_item_schema": "discriminated_set_clear_v1",
+    "walk_in_capacity_limits": "exact_offer_occupied_asset_days",
+    "walk_in_capacity_set_semantics": "daily_upsert",
+    "walk_in_price_separation": "posted_prices_never_fill_contract_lines"
+  },
+  "reservation_operations_runtime_builder": "outfitter-reservation-operations-runtime-builder-v1",
+  "reservation_pickup_order": "finalize_due_pickups_before_walk_ins_v1",
+  "reservation_profile_runtime_builder": "outfitter-reservation-promise-runtime-builder-v1",
+  "reservation_promise_profiles": {
+    "active_profile_count": 33,
+    "authorization_is_exhaustive": false,
+    "choice_history": "immutable_raw_searchable_paginated",
+    "choice_history_default_limit": 10,
+    "choice_history_sort_default": "newest_first",
+    "claim_boundary": "benchmark contract representation; not an observed market taxonomy",
+    "complete_contract_option_count": null,
+    "contract_mode": "factorized_line_options_plan_set_v1",
+    "customer_rejection_feedback": "empty_set_independent_concern_tags_with_subjective_line_comment",
+    "durable_offer_coverage": 46,
+    "enabled_config_required": true,
+    "feedback": "reservation_plan_set_feedback.json",
+    "file": "reservation_promise_profiles.json",
+    "format": "outfitter-reservation-promise-profiles-v1",
+    "implicit_cartesian_product": "private_bounded_expansion",
+    "line_mixing": false,
+    "line_option_count": null,
+    "maximum_internal_plan_count": 24,
+    "maximum_returned_authorized_plan_count": 3,
+    "optional_line_disposition": [
+      "quote",
+      "omit"
+    ],
+    "optional_line_quote_option_count": [
+      0,
+      2
+    ],
+    "profile_count": 39,
+    "quote_option_surface": "view_reservation_quote_workspace",
+    "quote_workspace_offer_projections": [
+      "compact",
+      "references_only"
+    ],
+    "quote_workspace_request_page_limit": 5,
+    "required_line_option_count": [
+      1,
+      2
+    ],
+    "schema_semantics_sha256": "7579ef53efef25c42e0d9f3e5e9dc5b10f3b7f1f0f8f7ca729cce986be298a3c",
+    "schema_version": "reservation-promise-profile-v1",
+    "selected_exact_authorization_count": 1,
+    "staging": false
+  },
+  "reservation_record_surface": {
+    "detail_default_sections": [
+      "current_terms",
+      "fulfillment"
+    ],
+    "detail_sections": [
+      "current_terms",
+      "submitted_quote",
+      "customer_authorization",
+      "fulfillment",
+      "changes",
+      "risk"
+    ],
+    "page_limit_default": 10,
+    "page_limit_maximum": 10,
+    "quote_history": "normalized_line_options_and_plan_references"
+  },
+  "reservation_service_reputation": {
+    "choice_penalty_cap": 2.5,
+    "choice_penalty_slope": 20.0,
+    "cold_start_pseudo_outcomes": 50,
+    "excluded_outcomes": [
+      "customer_cancellation",
+      "optional_line_missing_credit"
+    ],
+    "failure_weights": {
+      "manager_cancel_notice_1": 0.6,
+      "manager_cancel_notice_2_3": 0.45,
+      "manager_cancel_notice_4_7": 0.25,
+      "manager_cancel_notice_8_plus": 0.15,
+      "manager_cancel_same_day": 0.75,
+      "pickup_failure": 1.0,
+      "pickup_fulfilled": 0.0
+    },
+    "formal_default_enabled": false,
+    "format": "outfitter-reservation-service-reputation-v1",
+    "outcome_window": 50,
+    "reliability_score_burden_multiplier": 2.0
+  },
+  "retail_reference_price_method": "legacy field retained for control/audit only; formal channel demand uses verified exact-offer package cash and complete-unit prices",
+  "schema_version": "outfitter-decision-schema-v13",
+  "scripted_economic_qa": {
+    "passed": false,
+    "status": "pending_for_current_channel_demand_version"
+  },
+  "searchable_quote_history_runtime_builder": "outfitter-searchable-quote-history-runtime-builder-v1",
+  "service_commitment_policy": {
+    "date_offsets": [
+      -10,
+      -9,
+      -8,
+      -7,
+      -6,
+      -5,
+      -4,
+      -3,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "format": "outfitter-service-commitments-v1",
+    "initial_date_alternative_policy": "customer_preference_weighted_v1",
+    "market_factors": [
+      0.8,
+      1.0,
+      1.2
+    ],
+    "market_reference_is_empirical": false,
+    "maximum_complete_plans": 3,
+    "one_day_cleaning_fraction": 0.3333333333333333,
+    "original_dates_unavailable_probability": 0.5,
+    "purchase_price_fraction_per_day": 0.1,
+    "service_offer_attempt_probability": 0.4
+  },
+  "service_lines": 23,
+  "source": "release_catalog.jsonl",
+  "source_quality_policy": "unknown/source_missing",
+  "source_runtime": "outfitter-seasonal-v46-trip-return-dynamics",
+  "supplier_delivery_policy": {
+    "actual_may_arrive_days_after_estimate": 2,
+    "actual_may_arrive_days_before_estimate": 1,
+    "agent_observes_variability_range": false,
+    "maximum_days": 7,
+    "minimum_days": 2,
+    "seller_specific_concrete_estimate": true
+  },
+  "supplier_trial": {
+    "handling_fee": 10.0,
+    "maximum_accepted_trials": 4,
+    "maximum_active_trials": 1,
+    "maximum_contract_starts": 3,
+    "maximum_unit_cost": 1500.0,
+    "optional_omit": "implicit_singleton_with_explicit_singleton_compatibility",
+    "supplier_cancellation_generated": false,
+    "terminal_value": 0.0,
+    "usage_fee_multiplier": 1.0,
+    "window_days": 21
+  },
+  "supplier_trial_policy": "bounded-supplier-trial-v1",
+  "supported_assortment_modes": [
+    "rental_only",
+    "rental_and_retail"
+  ],
+  "tent_capacity_policy": {
+    "capacity_persons": "upper sourced range endpoint used for hard compatibility",
+    "comfortable_capacity_persons": "lower sourced range endpoint",
+    "legacy_runtime_projection": "deterministic builder migration"
+  },
+  "threshold_sensitivity_audit": {
+    "audit_result": "passed after cent-quantization-stable scripted reorder tie band",
+    "fix1_to_fix2b_max_absolute_value_change_cny": {
+      "200_days": 0.26,
+      "28_days": 0.42
+    },
+    "original_fix2_anomaly": "200-day base informed seed 59 differed by -224.02 because a water-pack projected value moved from +0.0075 to -0.06 after unit-quote rounding",
+    "original_fix2_result_sha256": "c7bf6e9ae299c63097a3c347b980fa71b4b60d4dd406338f23cec3670e0b6405",
+    "paired_runs_compared": 90,
+    "scripted_policy_tie_band": "0.005 CNY times projected unsold consumer units; actual dealer quotes and scored values remain cent-exact"
+  },
+  "tool_interface_version": 44,
+  "trip_weather_policy": "public-trip-temperature-and-close-outcomes-v1",
+  "warehouse_capacity_policy": "owned_and_inbound_return_reserved_v1",
+  "weather_days": 365,
+  "weather_information": {
+    "channel_and_lead_fixed_before_weather_consideration": true,
+    "consideration_probabilities": {
+      "lightweight": {
+        "cloudy": 0.78,
+        "cold": 0.55,
+        "hot": 0.6,
+        "rainy": 0.3,
+        "snowy": 0.16,
+        "sunny": 0.9
+      },
+      "overnight": {
+        "cloudy": 0.78,
+        "cold": 0.5,
+        "hot": 0.6,
+        "rainy": 0.25,
+        "snowy": 0.12,
+        "sunny": 0.92
+      },
+      "picnic": {
+        "cloudy": 0.75,
+        "cold": 0.32,
+        "hot": 0.45,
+        "rainy": 0.14,
+        "snowy": 0.07,
+        "sunny": 0.94
+      },
+      "supply": {
+        "cloudy": 0.86,
+        "cold": 0.82,
+        "hot": 0.95,
+        "rainy": 0.88,
+        "snowy": 0.75,
+        "sunny": 0.9
+      }
+    },
+    "date_preference": "shared-public-forecast-calendar-distance-customer-v1",
+    "format": "shared-public-weather-customer-pool-v1",
+    "future_truth_direct_customer_access": false,
+    "natural_cancellation": {
+      "base": 0.018,
+      "cap": 0.1,
+      "flexibility_protection": 0.4,
+      "late_day_weight": 0.25,
+      "model": "single-presampled-absolute-event-day-v1",
+      "per_booking_lead_day": 0.006,
+      "reschedule_redraws_event": false
+    },
+    "one_consideration_opportunity_per_customer": true,
+    "potential_pool": "calendar-season-archetype-only-v1",
+    "potential_pool_multipliers": {
+      "lightweight": 1.3,
+      "overnight": 1.35,
+      "picnic": 1.35,
+      "supply": 1.15
+    },
+    "reservation_forecast_trust_blend": "toward-cloudy-neutral-v1",
+    "reservation_information": "request-day-public-forecast",
+    "walk_in_information": "arrival-day-observed-weather",
+    "weather_review": "incremental-adversity-once-per-contract-version-v1"
+  },
+  "weather_information_policy": "shared-public-weather-customer-pool-v1",
+  "weather_mapping": "same_month_day_historical_replay",
+  "weather_source": "Beijing Visual Crossing daily weather, 2023-01-01 through 2023-12-31",
+  "weather_source_year": 2023
+}

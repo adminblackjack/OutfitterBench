@@ -1,0 +1,196 @@
+{
+  "archetype_base_lambdas": {
+    "lightweight": [
+      0.5,
+      0.9
+    ],
+    "overnight": [
+      0.7,
+      1.4
+    ],
+    "picnic": [
+      0.8,
+      1.6
+    ],
+    "supply": [
+      1.5,
+      2.3
+    ]
+  },
+  "arrival_scale": 2.2,
+  "base_budgets": {
+    "rental:camp_chair": 6.0,
+    "rental:camp_cookware": 10.0,
+    "rental:camp_lantern": 10.0,
+    "rental:camp_table": 12.0,
+    "rental:sleeping_bag": 15.0,
+    "rental:sleeping_pad": 8.0,
+    "rental:tent": 42.0,
+    "retail:bottled_water": 3.0,
+    "retail:cleaning_wipes": 15.0,
+    "retail:energy_snacks": 9.0,
+    "retail:garbage_bags": 7.0,
+    "retail:instant_food": 28.0,
+    "retail:rain_gear": 22.0,
+    "retail:repellent": 24.0
+  },
+  "cleaning_capacity_points": 30.0,
+  "cleaning_work_points": {
+    "air_mattress": [
+      2.0,
+      0.2
+    ],
+    "camp_chair": [
+      1.0,
+      0.1
+    ],
+    "camp_cookware": [
+      2.5,
+      0.25
+    ],
+    "camp_lantern": [
+      1.0,
+      0.1
+    ],
+    "camp_table": [
+      1.5,
+      0.15
+    ],
+    "closed_cell_foam_pad": [
+      1.5,
+      0.15
+    ],
+    "self_inflating_pad": [
+      2.0,
+      0.2
+    ],
+    "sleeping_bag": [
+      4.5,
+      0.4
+    ],
+    "tent": [
+      6.0,
+      0.55
+    ]
+  },
+  "deposit_friction": 0.05,
+  "forecast_accuracy_by_lead": [
+    1.0,
+    0.9,
+    0.8,
+    0.7,
+    0.65,
+    0.6,
+    0.55,
+    0.5
+  ],
+  "forecast_temperature_sigma_by_lead": [
+    0.0,
+    1.2,
+    1.8,
+    2.4,
+    2.9,
+    3.4,
+    3.8,
+    4.2
+  ],
+  "holiday_arrival_multipliers": {
+    "dragon_boat": 1.5,
+    "labor_day": 1.75,
+    "mid_autumn": 1.6,
+    "national_day": 2.0,
+    "new_year": 1.3,
+    "qingming": 1.45,
+    "spring_festival": 1.2
+  },
+  "lambda_group": 0.7,
+  "lambda_offer": 0.25,
+  "preferred_group_bonus": 0.65,
+  "price_beta_mean": 2.4,
+  "price_beta_sigma": 0.28,
+  "quality_values": {
+    "economy": -0.15,
+    "premium": 0.18,
+    "standard": 0.0,
+    "unknown": 0.0
+  },
+  "seasonal_anchors": [
+    [
+      91,
+      0.8
+    ],
+    [
+      111,
+      1.15
+    ],
+    [
+      135,
+      1.25
+    ],
+    [
+      166,
+      1.16
+    ],
+    [
+      196,
+      1.22
+    ],
+    [
+      227,
+      1.19
+    ],
+    [
+      258,
+      1.17
+    ],
+    [
+      279,
+      1.09
+    ],
+    [
+      288,
+      0.81
+    ]
+  ],
+  "service_intercept": -0.35,
+  "substitute_group_penalty": 0.55,
+  "version": "outfitter-market-rules-v6",
+  "weather_multipliers": {
+    "cloudy": {
+      "lightweight": 1.0,
+      "overnight": 1.0,
+      "picnic": 1.0,
+      "supply": 1.0
+    },
+    "cold": {
+      "lightweight": 0.7,
+      "overnight": 0.6,
+      "picnic": 0.45,
+      "supply": 0.95
+    },
+    "hot": {
+      "lightweight": 0.8,
+      "overnight": 0.75,
+      "picnic": 0.6,
+      "supply": 1.1
+    },
+    "rainy": {
+      "lightweight": 0.35,
+      "overnight": 0.3,
+      "picnic": 0.2,
+      "supply": 0.9
+    },
+    "snowy": {
+      "lightweight": 0.2,
+      "overnight": 0.15,
+      "picnic": 0.1,
+      "supply": 0.8
+    },
+    "sunny": {
+      "lightweight": 1.2,
+      "overnight": 1.25,
+      "picnic": 1.3,
+      "supply": 1.05
+    }
+  }
+}

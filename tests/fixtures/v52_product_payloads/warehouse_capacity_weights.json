@@ -1,0 +1,1711 @@
+{
+  "anchors": {
+    "offer-009": 6,
+    "offer-020": 1,
+    "offer-031": 2,
+    "offer-048": 10,
+    "offer-050": 8,
+    "offer-073": 4
+  },
+  "catalog_sha256": "efcf8507465f9750302ebd62f24b2a50f401605a3605d11d14aa0c8da9b3d7b3",
+  "format": "outfitter-warehouse-capacity-weights-v1",
+  "generation_calls": [
+    {
+      "cached": false,
+      "content_length": 2284,
+      "elapsed_seconds": 6.749796,
+      "finish_reason": "stop",
+      "input_tokens": 3669,
+      "model": "deepseek-v4-flash",
+      "output_tokens": 855,
+      "parse_attempts": 1,
+      "payload_sha256": "a128ac145c1395b1244372d7d44cb45d458504968132b5f4f103bea6fa831122",
+      "prompt_version": "v3-space-consumed",
+      "reasoning_content_length": 0,
+      "reasoning_effort": null,
+      "system_prompt_sha256": "bef794383501bb4bc4eb95a9a206053b5d720dd11b5ada5c31be25cae959628a",
+      "thinking": "disabled",
+      "transport_attempts": 1
+    },
+    {
+      "cached": false,
+      "content_length": 2774,
+      "elapsed_seconds": 7.024765,
+      "finish_reason": "stop",
+      "input_tokens": 3906,
+      "model": "deepseek-v4-flash",
+      "output_tokens": 1083,
+      "parse_attempts": 1,
+      "payload_sha256": "ed3134660d40d66de3be7d3d2af306a29885481f6af3cff7cb67add55e1c5837",
+      "prompt_version": "v3-space-consumed",
+      "reasoning_content_length": 0,
+      "reasoning_effort": null,
+      "system_prompt_sha256": "bef794383501bb4bc4eb95a9a206053b5d720dd11b5ada5c31be25cae959628a",
+      "thinking": "disabled",
+      "transport_attempts": 1
+    },
+    {
+      "cached": false,
+      "content_length": 2691,
+      "elapsed_seconds": 16.143263,
+      "finish_reason": "stop",
+      "input_tokens": 4127,
+      "model": "deepseek-v4-flash",
+      "output_tokens": 1132,
+      "parse_attempts": 2,
+      "payload_sha256": "e34ed54fb96a36d017da0b0330b74b3fccf5eb74048c0285ffe14f0582438b47",
+      "prompt_version": "v3-space-consumed",
+      "reasoning_content_length": 0,
+      "reasoning_effort": null,
+      "system_prompt_sha256": "bef794383501bb4bc4eb95a9a206053b5d720dd11b5ada5c31be25cae959628a",
+      "thinking": "disabled",
+      "transport_attempts": 2
+    },
+    {
+      "cached": false,
+      "content_length": 3032,
+      "elapsed_seconds": 9.600165,
+      "finish_reason": "stop",
+      "input_tokens": 3803,
+      "model": "deepseek-v4-flash",
+      "output_tokens": 1262,
+      "parse_attempts": 1,
+      "payload_sha256": "c1dd9081047ae9d537cf73c04f611a0c398a999a2be8687fc6596a76940b2880",
+      "prompt_version": "v3-space-consumed",
+      "reasoning_content_length": 0,
+      "reasoning_effort": null,
+      "system_prompt_sha256": "bef794383501bb4bc4eb95a9a206053b5d720dd11b5ada5c31be25cae959628a",
+      "thinking": "disabled",
+      "transport_attempts": 1
+    },
+    {
+      "cached": false,
+      "content_length": 2413,
+      "elapsed_seconds": 7.628508,
+      "finish_reason": "stop",
+      "input_tokens": 3431,
+      "model": "deepseek-v4-flash",
+      "output_tokens": 1029,
+      "parse_attempts": 1,
+      "payload_sha256": "f220285bf6c4054a5db2de5bd52a4f1ae48bfee7f4e461c5a9b254d34455799e",
+      "prompt_version": "v3-space-consumed",
+      "reasoning_content_length": 0,
+      "reasoning_effort": null,
+      "system_prompt_sha256": "bef794383501bb4bc4eb95a9a206053b5d720dd11b5ada5c31be25cae959628a",
+      "thinking": "disabled",
+      "transport_attempts": 1
+    }
+  ],
+  "implementing_agent_review": {
+    "additional_checks": [
+      "033明确包装尺寸75×35×35，其包围盒量级约为单人帐锚点60×20×20的3.83倍；原12占用偏小，本次设36。它不是依据服务人数或质量缩小成轻量帐。",
+      "022小号1-2人桌和078小号50cm桌统一6；068的90款设10；084速开侧桌保留5。均为低置信度结构估计，不编造打包长度或杆件尺寸。",
+      "所有无来源的新尺寸/总体积/总重从最终rationale与design_assumptions中移除；原始错误建议仍在annotation_before_review和冻结候选文件中，明确不是生效解释。",
+      "6锚点完全不变；46件租赁SKU完整覆盖；所有占用为正整数；质量不被直接按比例转换为空间；客户隐藏偏好、价格、资产寿命和持有费系数不进入赋值。"
+    ],
+    "adjustments": [
+      {
+        "offer_id": "offer-001",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 20
+        },
+        "reason": "4-6人充气屋型帐带较多帐布、气梁与完整配件，收纳比普通小帐更占空间；相对小帐锚点设20，未知包装尺寸。"
+      },
+      {
+        "offer_id": "offer-006",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 12
+        },
+        "reason": "双人3cm自充垫带泡沫内芯，放气不等于消除全部材料占用；按单人同类6的约两倍设12。"
+      },
+      {
+        "offer_id": "offer-010",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 18
+        },
+        "reason": "双人海绵奶酪床垫含内置泵，保留泡沫体积和组件；高于双人薄自充垫，设18，不视作纯空气袋。"
+      },
+      {
+        "offer_id": "offer-011",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 2
+        },
+        "reason": "一件22cm煎锅，浅锅体加手柄占用；与同类中号煎锅和1.6L锅处于同一粗粒度档2，不推断锅高。"
+      },
+      {
+        "offer_id": "offer-018",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 16
+        },
+        "reason": "双人5cm加厚自充垫比双人3cm同类占用更大，设16；不按充气展开厚度线性等同收纳体积。"
+      },
+      {
+        "offer_id": "offer-019",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 3
+        },
+        "reason": "公开为1kg简单折叠凳而非完整月亮椅，估计收纳较紧凑；采用月亮椅6的一半档3，不用质量直接换算体积。"
+      },
+      {
+        "offer_id": "offer-021",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 16
+        },
+        "reason": "4-6人牛津布标配帐篷，比小型帐锚点有较多布料和支撑部件，设16；与同规格055完全同权重。"
+      },
+      {
+        "offer_id": "offer-022",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 6
+        },
+        "reason": "小号1-2人碳钢折叠桌按完整桌板与支架收纳，采用与小号50cm桌一致的6档。"
+      },
+      {
+        "offer_id": "offer-023",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 3
+        },
+        "reason": "1kg化纤睡袋采用略低于1.3kg睡袋锚点4的档3；仅为同类收纳量级估计。"
+      },
+      {
+        "offer_id": "offer-024",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 4
+        },
+        "reason": "1.3kg化纤睡袋与1.3kg睡袋锚点采用同一4档；没有可靠收纳尺寸支持更细的区分。"
+      },
+      {
+        "offer_id": "offer-025",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 8
+        },
+        "reason": "180×60×1.8cm闭孔泡沫蛋巢垫无法像纯充气垫排空材料；与相近尺寸053统一8档。"
+      },
+      {
+        "offer_id": "offer-026",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 7
+        },
+        "reason": "碳钢框架升级折叠椅，展开尺寸与锚点相近但框架较重，按稍大的收纳档7估计；不推断包装尺寸。"
+      },
+      {
+        "offer_id": "offer-030",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 6
+        },
+        "reason": "单人3cm自充泡沫垫需保留内芯，采用6档；双人同厚006设12，而不是比单人更小。"
+      },
+      {
+        "offer_id": "offer-032",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 5
+        },
+        "reason": "轻量小号铝制月亮椅采用略小于基础椅6的档5，结构和型号提供比较依据，具体收纳尺寸未知。"
+      },
+      {
+        "offer_id": "offer-033",
+        "overrides": {
+          "confidence": "medium",
+          "warehouse_capacity_units_per_asset": 36
+        },
+        "reason": "原始公开包装尺寸75×35×35明显大于两个帐篷锚点；对比60×20×20锚点的包围盒量级约3.83倍，设计占用36。保持相对整数而非实测升数。"
+      },
+      {
+        "offer_id": "offer-038",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 3
+        },
+        "reason": "手动TPU充气垫没有明示泡沫内芯，放气收纳采用较紧凑的3档；不将190×58×5充气尺寸当作打包尺寸。"
+      },
+      {
+        "offer_id": "offer-039",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 4
+        },
+        "reason": "这是1.5kg化纤睡袋，不是羽绒；与1.3kg同类采用4档，轻薄营销标签不足以推出更小收纳体积。"
+      },
+      {
+        "offer_id": "offer-044",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 3
+        },
+        "reason": "鸭绒睡袋可压缩，公开质量与同系列062相同而收纳尺寸缺失，二者统一3档；不从CW型号数字反推填充质量。"
+      },
+      {
+        "offer_id": "offer-045",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 1
+        },
+        "reason": "小型营地灯与灯具锚点共用1档；不依据夸张功率/续航营销值推算体积。"
+      },
+      {
+        "offer_id": "offer-049",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 3
+        },
+        "reason": "2.6L锅与蒸笼作为完整套件，相对1.6L锅锚点2设稍大的3档；不声称已测量套件打包体积。"
+      },
+      {
+        "offer_id": "offer-051",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 8
+        },
+        "reason": "3kg厚中空棉睡袋采用比1.3kg锚点4显著更大的8档；质量和保暖构造提供量级线索，不作精确体积换算。"
+      },
+      {
+        "offer_id": "offer-052",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 2
+        },
+        "reason": "带把手的1kg充电灯按完整外壳和电池组件估计2档，大于小型灯锚点1。"
+      },
+      {
+        "offer_id": "offer-053",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 8
+        },
+        "reason": "186×56×1.8cm泡沫垫与025的公开尺寸相近，统一8档；折叠不会消除闭孔泡沫本体。"
+      },
+      {
+        "offer_id": "offer-054",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 8
+        },
+        "reason": "克米特框架加扶手采用比基本月亮椅6略大的8档；与相同公开质量的069同类统一，不伪造折叠尺寸。"
+      },
+      {
+        "offer_id": "offer-055",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 16
+        },
+        "reason": "与021具有相同名称、SKU规格和公开物理属性，统一16；保留不同offer ID，不声称这是2-3人或2kg的小帐。"
+      },
+      {
+        "offer_id": "offer-056",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 2
+        },
+        "reason": "中号煎锅与收纳袋作为一件资产，同类锅具统一2档；没有来源支持虚构24-26cm直径或5cm高度。"
+      },
+      {
+        "offer_id": "offer-058",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 12
+        },
+        "reason": "大幅展开的脚托躺椅包含额外支撑件，估计12档，为基础月亮椅6的两倍；不是基于虚构打包尺寸。"
+      },
+      {
+        "offer_id": "offer-059",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 2
+        },
+        "reason": "400g标称羽绒轻量款采用紧凑2档，低于同系列常规鸭绒3；不把标称400g当总重，也不添加800g总重。"
+      },
+      {
+        "offer_id": "offer-062",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 3
+        },
+        "reason": "公开质量与同系列044相同，且无可靠收纳尺寸，统一鸭绒睡袋3档；不凭型号或温标捏造精确体积差。"
+      },
+      {
+        "offer_id": "offer-064",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 12
+        },
+        "reason": "2-3人速开帐按相对单人速开锚点10稍大的12档估计；无打包尺寸，不新增55×15×15之类数字。"
+      },
+      {
+        "offer_id": "offer-065",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 18
+        },
+        "reason": "双人泡沫垫200×120×1.8cm公开材料量级约为025单人的2.2倍，设18档；不将泡沫压缩成近乎零占用。"
+      },
+      {
+        "offer_id": "offer-066",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 8
+        },
+        "reason": "186cm蛋巢垫缺少完整宽厚数据，采用同类单人泡沫垫8档作为明确的低置信度设计估计。"
+      },
+      {
+        "offer_id": "offer-067",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 30
+        },
+        "reason": "三人8cm记忆棉自充垫在收纳时仍保留较多泡沫内芯，采用30档，高于双人5cm的16档；不添加总重或收纳尺寸。"
+      },
+      {
+        "offer_id": "offer-068",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 10
+        },
+        "reason": "90款蛋卷桌需收纳桌板与支架，采用10档，高于小号1-2人桌6；不声称有精确打包尺寸或总重。"
+      },
+      {
+        "offer_id": "offer-069",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 8
+        },
+        "reason": "儿童款标签与公开展开尺寸的相对大小不一致，质量与054同为2.3kg；不单凭标签缩小，按同类克米特框架统一8档并保留低置信度。"
+      },
+      {
+        "offer_id": "offer-071",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 10
+        },
+        "reason": "三人TPU充气床和锂电泵整体采用10档；可放气但必须包含泵与床体，不当作无占用。"
+      },
+      {
+        "offer_id": "offer-076",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 2
+        },
+        "reason": "时钟遥控手提灯采用比小型灯锚点1略大的2档；不添加直径、高度或所谓6升体积。"
+      },
+      {
+        "offer_id": "offer-078",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 6
+        },
+        "reason": "50cm小号1-2人蛋卷桌采用与022相同6档，低于90款10；只用公开型号尺度作粗粒度比较。"
+      },
+      {
+        "offer_id": "offer-082",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 8
+        },
+        "reason": "双人PVC床体和内置蓄电泵一起采用8档，低于三人加泵071的10；不将内置泵剔除，也不推断打包尺寸。"
+      },
+      {
+        "offer_id": "offer-084",
+        "overrides": {
+          "warehouse_capacity_units_per_asset": 5
+        },
+        "reason": "铝合金速开侧桌按完整桌板和支架采用5档，属于小桌量级；具体收纳结构和尺寸未知。"
+      }
+    ],
+    "common_annotation_overrides": {
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ]
+    },
+    "concern_resolutions": {
+      "0": "021和055的同名同规格4-6人牛津布帐篷统一为16；保留两个全局offer ID，不删除或去重目录。",
+      "1": "固定073=4，024=4保持；3kg中空棉051改为8。只要求合理量级，不将质量比例等同精确体积比例。",
+      "10": "不接受仅凭儿童款标签判定更小的建议：069公开展开尺寸53×52×72并不小于054的47×45×58，且质量同为2.3kg。两者按同类克米特框架统一8，保留原始字段矛盾并降置信度，不捏造儿童款收纳尺寸。",
+      "2": "039为化纤而非羽绒；改为4并修正标注。1.3kg与1.5kg在缺少收纳尺寸时可共用粗粒度档位，不强制每个质量差异对应不同体积。",
+      "3": "删除凭空声称059总重800g的解释；400g仅为SKU标称，不将其直接当总重。044与062同系列、公开重量相同、收纳尺寸不明，统一为3；059按更轻量羽绒款估计2，低置信度。",
+      "4": "单人3cm自充垫030=6，双人3cm006=12，双人5cm018=16，三人8cm记忆棉067=30；不能把泡沫内芯视为空气完全排出。",
+      "5": "与问题3合并处理；不根据CW型号数字推算未经核实的填充质量，也不认为所有羽绒款必然体积相同。",
+      "6": "025与053公开尺寸相近，统一8；066缺宽厚数据，采用相同单人蛋巢垫设计档8并标低置信度；双人065为18，依据其明确面积约为单人2.2倍的量级，非实测收纳体积。",
+      "7": "两款煎锅011与056统一2，与1.6L锅锚点2同粗粒度档；2.6L锅加蒸笼049保持3。不接受审核中1.5这类非整数建议。删除假造煎锅直径/高度。",
+      "8": "038为无泡沫的手动TPU充气垫，放气后估计3；双人PVC内置泵082保持8、三人TPU加泵071保持10；海绵内芯的双人010改18，不能与纯空气床按同一压缩逻辑处理。",
+      "9": "简单折叠凳019降至3；大框架脚托躺椅058保留12，但删除虚构打包尺寸。没有证据要求其必须小于基础月亮椅的两倍，12仅为有明确结构理由的设计档位。"
+    },
+    "decision": "approve",
+    "rationale": "完整审阅46件商品的公开物理属性、6个人工锚点、5批DeepSeek建议及独立审核。辅助模型生成结果并非真值，仍有跨批次不一致、按重量当体积和虚构收纳尺寸。本次停止重新抽样，统一做一次全目录的设计校正；保留全部原标注与审核意见。仅依据收纳方式、公开材质/结构、完整套件、明确的包装尺寸及固定锚点，没有查看任何候选N的盈利，不依据价格/需求/残值拟合。N仍未选定。以下整数是可复查的粗粒度设计参数，不是升数、装得下的件数或实测物理真值。冻结后不按策略利润反调。",
+    "reviewed_offer_ids": [
+      "offer-001",
+      "offer-006",
+      "offer-009",
+      "offer-010",
+      "offer-011",
+      "offer-018",
+      "offer-019",
+      "offer-020",
+      "offer-021",
+      "offer-022",
+      "offer-023",
+      "offer-024",
+      "offer-025",
+      "offer-026",
+      "offer-030",
+      "offer-031",
+      "offer-032",
+      "offer-033",
+      "offer-038",
+      "offer-039",
+      "offer-044",
+      "offer-045",
+      "offer-048",
+      "offer-049",
+      "offer-050",
+      "offer-051",
+      "offer-052",
+      "offer-053",
+      "offer-054",
+      "offer-055",
+      "offer-056",
+      "offer-058",
+      "offer-059",
+      "offer-062",
+      "offer-064",
+      "offer-065",
+      "offer-066",
+      "offer-067",
+      "offer-068",
+      "offer-069",
+      "offer-071",
+      "offer-073",
+      "offer-076",
+      "offer-078",
+      "offer-082",
+      "offer-084"
+    ],
+    "reviewer": "primary implementing agent; not a claim of external physical measurement"
+  },
+  "independent_consistency_review": {
+    "metadata": {
+      "cached": false,
+      "content_length": 7350,
+      "elapsed_seconds": 16.012036,
+      "finish_reason": "stop",
+      "input_tokens": 16010,
+      "model": "deepseek-v4-flash",
+      "output_tokens": 1915,
+      "parse_attempts": 1,
+      "payload_sha256": "d5da00dde0600c27e352910cb8d03c533ea85ad951c4f4b0530f7ec5bc0346aa",
+      "prompt_version": "v2-space-consumed",
+      "reasoning_content_length": 0,
+      "reasoning_effort": null,
+      "system_prompt_sha256": "2306a94bd3206aa01276ae34c1d7a970a6cf8d50fca5ee91277ab05b6b0af6b2",
+      "thinking": "disabled",
+      "transport_attempts": 1
+    },
+    "review": {
+      "concerns": [
+        {
+          "offer_ids": [
+            "offer-055",
+            "offer-021"
+          ],
+          "problem": "offers 055 and 021 are the same physical tent variant (same SKU color '小号4-6人咖啡色银胶布标配帐篷') but assigned inconsistent space weights: offer-021 has weight 10 while offer-055 has weight 8.",
+          "suggested_resolution": "Assign the same weight to both offers for the identical product; use the physical variant's common packing (e.g., 10 or unify to a consensus consistent with comparable tents)."
+        },
+        {
+          "offer_ids": [
+            "offer-024",
+            "offer-073"
+          ],
+          "problem": "offer-024 is a 1.3 kg synthetic sleeping bag with weight 4, while anchored offer-073 is a comparable 1.3 kg synthetic sleeping bag (same fill and similar size) but given weight 4; however consider offer-051: 3 kg heavy synthetic bag only weight 5, inconsistent with lighter bags having weight 3-4, and offer-023 1kg synthetic has weight 3 which may be reasonable, but the ratio (3kg = 5) vs (1.3kg = 4) is compressible.",
+          "suggested_resolution": "Ensure monotonic space weights for sleeping bags: heavier/larger bags should not have weights equal to or lower than lighter ones. The 3 kg bag should likely have weight >5, or adjust the 1.3 kg bags down."
+        },
+        {
+          "offer_ids": [
+            "offer-039"
+          ],
+          "problem": "offer-039 is a 1.5 kg synthetic sleeping bag given weight 3, but lighter 1.3 kg synthetic sleeping bag (offer-024) has weight 4, and similar 1 kg bag (offer-023) has weight 3. Heavier bag should not have lower weight than a lighter comparable.",
+          "suggested_resolution": "Adjust offer-039 weight to at least 4 (or higher) to maintain consistency with similar synthetic sleeping bags, unless there is explicit evidence for higher compressibility."
+        },
+        {
+          "offer_ids": [
+            "offer-059",
+            "offer-062",
+            "offer-044"
+          ],
+          "problem": "offer-059 (down sleeping bag, total weight ~800g) has weight 1, while offer-062 (down sleeping bag, total weight ~910g) also has weight 1, but offer-044 (down sleeping bag, total weight ~910g but lower temperature rating) has weight 3. This suggests inconsistent treatment of compressible down bags; 910g bags have different weights (1 vs 3) when they are similar physical size.",
+          "suggested_resolution": "Reconcile weights for similar down sleeping bags; if compressible, 910g bags should have the same weight unless there is a significant size difference."
+        },
+        {
+          "offer_ids": [
+            "offer-030",
+            "offer-018",
+            "offer-006"
+          ],
+          "problem": "Self-inflating pads: offer-030 single 3cm self-inflating pad has weight 8, while offer-018 is a double 5cm pad with weight 3, and offer-006 double 3cm pad also weight 3. 8 for a single thin self-inflating pad is far higher than for a double thicker pad, violating physical logic.",
+          "suggested_resolution": "Reassess offer-030: a single 3cm self-inflating pad should be roughly half the volume of a double 3cm pad, so weight should be lower (e.g., around 2 or 3), not 8."
+        },
+        {
+          "offer_ids": [
+            "offer-059",
+            "offer-062",
+            "offer-044"
+          ],
+          "problem": "offer-059 is a down sleeping bag with 400g fill, weight 1; offer-062 is a down sleeping bag with similar fill and total weight 910g, also weight 1, but offer-044 (also down, 910g) has weight 3. The difference appears arbitrary rather than based on physical differences.",
+          "suggested_resolution": "Use consistent criteria for compressible down bags; all three have similar packed size after compression, so weights should be equal unless one has a larger shell (e.g., envelope vs mummy)."
+        },
+        {
+          "offer_ids": [
+            "offer-065",
+            "offer-053",
+            "offer-066"
+          ],
+          "problem": "Foam pads: offer-065 is a double 200x120x1.8cm foam pad with weight 1, offer-066 single 186cm foldable pad also weight 1, but offer-053 single 186x56x1.8cm pad has weight 4. A double pad cannot have the same low weight as a small single if the other single has 4; inconsistency in scaling with size.",
+          "suggested_resolution": "Scale pad weights by packed volume; the double pad should weigh more than a single pad of similar thickness. Reconcile to make larger pads have higher weights."
+        },
+        {
+          "offer_ids": [
+            "offer-011",
+            "offer-056",
+            "offer-049",
+            "offer-031"
+          ],
+          "problem": "Cookware: offer-011 22cm pan weight 1, but offer-056 medium pan with storage bag weight 3, while offer-031 1.6L pot weight 2, and offer-049 2.6L pot with steamer weight 3. The pan (shallow) vs pot (tall) comparisons may be okay but 22cm pan at 1 seems too low compared to anchored small lamp (1) and chair (6) relative to a 1.6L kettle (2); needs review for physical volume.",
+          "suggested_resolution": "Verify consistency: a 22cm pan likely has more volume than a small lamp but less than a 1.6L pot; consider weight 2 or 1.5 if fractional allowed."
+        },
+        {
+          "offer_ids": [
+            "offer-010"
+          ],
+          "problem": "offer-010 '山之客奶酪充气床垫 墨绿色带泵双人款' has weight 8, but offer-082 double air bed with built-in pump has weight 8 as well, while offer-071 triple TPU air bed with pump has weight 10. The triple bed weight 10 vs double 8 seems fine, but offer-010 is a foam cheese mattress of unspecified size yet given 8; could be comparable to double air bed but evidence absent. Also, offer-038 (190x58x5cm manual air pad) has weight 9, which is higher than a double air mattress with pump (8) despite being a thinner pad.",
+          "suggested_resolution": "Review air mattress weights: a 5cm thick pad should not exceed a larger double air bed; ensure sizes reflect packed volume. Possibly offer-038 weight too high (9) vs offer-082 (8)."
+        },
+        {
+          "offer_ids": [
+            "offer-058",
+            "offer-019"
+          ],
+          "problem": "offer-058 recliner chair with footrest and steel frame, weight 12, while anchored chair offer-009 has weight 6, and offer-019 lightweight folding stool (1kg) also weight 6. The recliner is bigger but maybe not double the packed space of a moon chair; 12 may be excessive. More importantly, offer-019 is a simple low stool but gets same weight as a full moon chair (offer-009), likely too high.",
+          "suggested_resolution": "Assign lower weight to offer-019 (e.g., 3 or 4) as it is a small stool; also reassess offer-058 relative to moon chair (consider packed dimensions)."
+        },
+        {
+          "offer_ids": [
+            "offer-054",
+            "offer-069"
+          ],
+          "problem": "offer-054 is an adult extra-large Kermit chair (2.3kg) with weight 7, while offer-069 is a child-size Kermit chair (same weight 2.3kg) and also weight 7. Since the child chair is physically smaller, its packed space should be less, so it should have a lower weight (e.g., 5 or 6).",
+          "suggested_resolution": "Adjust offer-069 to a weight lower than offer-054, reflecting smaller folded size."
+        }
+      ],
+      "consistent": false,
+      "limitations": [
+        "Weights are relative design estimates, not measured volumes; inconsistencies indicate ordering or proportionality issues based on available attributes.",
+        "Several items lack packed dimensions; estimates rely on typical product shapes and comparable anchoring.",
+        "Some identical physical variants appear under different offer IDs; their weights should be identical but were assigned differently.",
+        "When explicit packed dimensions are provided, weights should be roughly proportional to the computed volumes; many provided weights are not reconciled against such volumes."
+      ]
+    }
+  },
+  "offers": [
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "假设4-6人充气帐篷存放体积与固定锚点中10单位的帐篷相当或更大。"
+        ],
+        "evidence_quotes": [
+          "充气帐篷露营5-6人户外野营自驾游免搭建可折叠棉布屋脊帐篷定制"
+        ],
+        "offer_id": "offer-001",
+        "rationale": "基于大型充气帐篷，体积大，相比固定锚点中的帐篷占用更多空间。",
+        "warehouse_capacity_units_per_asset": 12
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "充气帐篷露营5-6人户外野营自驾游免搭建可折叠棉布屋脊帐篷定制"
+      ],
+      "offer_id": "offer-001",
+      "rationale": "4-6人充气屋型帐带较多帐布、气梁与完整配件，收纳比普通小帐更占空间；相对小帐锚点设20，未知包装尺寸。",
+      "review_adjustment_reason": "4-6人充气屋型帐带较多帐布、气梁与完整配件，收纳比普通小帐更占空间；相对小帐锚点设20，未知包装尺寸。",
+      "warehouse_capacity_units_per_asset": 20
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "基于双人垫的典型尺寸，估算占用空间。"
+        ],
+        "evidence_quotes": [],
+        "offer_id": "offer-006",
+        "rationale": "双人自充气垫，体积中等，比单人垫大，但比帐篷小。",
+        "warehouse_capacity_units_per_asset": 3
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-006",
+      "rationale": "双人3cm自充垫带泡沫内芯，放气不等于消除全部材料占用；按单人同类6的约两倍设12。",
+      "review_adjustment_reason": "双人3cm自充垫带泡沫内芯，放气不等于消除全部材料占用；按单人同类6的约两倍设12。",
+      "warehouse_capacity_units_per_asset": 12
+    },
+    {
+      "confidence": "medium",
+      "design_assumptions": [
+        "按完整租赁资产正常收纳状态计量"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-009",
+      "provenance": "fixed_design_anchor",
+      "rationale": "固定人工 few-shot 锚点；相对设计单位，不是体积测量。",
+      "warehouse_capacity_units_per_asset": 6
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "由于是气垫床，可能收起后体积较大，设计估算为8单位。"
+        ],
+        "evidence_quotes": [],
+        "offer_id": "offer-010",
+        "rationale": "内置泵的山之客奶酪充气床垫，体尺寸圆润，占用空间相对较大。",
+        "warehouse_capacity_units_per_asset": 8
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-010",
+      "rationale": "双人海绵奶酪床垫含内置泵，保留泡沫体积和组件；高于双人薄自充垫，设18，不视作纯空气袋。",
+      "review_adjustment_reason": "双人海绵奶酪床垫含内置泵，保留泡沫体积和组件；高于双人薄自充垫，设18，不视作纯空气袋。",
+      "warehouse_capacity_units_per_asset": 18
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "假设22cm煎锅尺寸较小，单个占用空间接近基础单位。"
+        ],
+        "evidence_quotes": [],
+        "offer_id": "offer-011",
+        "rationale": "锅具类物品，体积小，但比灯和椅子略大。",
+        "warehouse_capacity_units_per_asset": 1
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-011",
+      "rationale": "一件22cm煎锅，浅锅体加手柄占用；与同类中号煎锅和1.6L锅处于同一粗粒度档2，不推断锅高。",
+      "review_adjustment_reason": "一件22cm煎锅，浅锅体加手柄占用；与同类中号煎锅和1.6L锅处于同一粗粒度档2，不推断锅高。",
+      "warehouse_capacity_units_per_asset": 2
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "基于双人垫与5cm厚度，估算与双人垫相近。"
+        ],
+        "evidence_quotes": [],
+        "offer_id": "offer-018",
+        "rationale": "自动充气垫，加厚款，体积中等。",
+        "warehouse_capacity_units_per_asset": 3
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-018",
+      "rationale": "双人5cm加厚自充垫比双人3cm同类占用更大，设16；不按充气展开厚度线性等同收纳体积。",
+      "review_adjustment_reason": "双人5cm加厚自充垫比双人3cm同类占用更大，设16；不按充气展开厚度线性等同收纳体积。",
+      "warehouse_capacity_units_per_asset": 16
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "high",
+        "design_assumptions": [
+          "与固定锚点中的折叠椅（重量6）相似，因此采用相同的容量单位。"
+        ],
+        "evidence_quotes": [
+          "户外折叠椅超轻可携式露营椅子美术写生椅钓鱼靠背坐椅板凳马扎"
+        ],
+        "offer_id": "offer-019",
+        "rationale": "折叠椅，与固定锚点的折叠椅（轻骑款）相似且轻便，但材质和结构相似，故采用相近的重量。",
+        "warehouse_capacity_units_per_asset": 6
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "户外折叠椅超轻可携式露营椅子美术写生椅钓鱼靠背坐椅板凳马扎"
+      ],
+      "offer_id": "offer-019",
+      "rationale": "公开为1kg简单折叠凳而非完整月亮椅，估计收纳较紧凑；采用月亮椅6的一半档3，不用质量直接换算体积。",
+      "review_adjustment_reason": "公开为1kg简单折叠凳而非完整月亮椅，估计收纳较紧凑；采用月亮椅6的一半档3，不用质量直接换算体积。",
+      "warehouse_capacity_units_per_asset": 3
+    },
+    {
+      "confidence": "medium",
+      "design_assumptions": [
+        "按完整租赁资产正常收纳状态计量"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-020",
+      "provenance": "fixed_design_anchor",
+      "rationale": "固定人工 few-shot 锚点；相对设计单位，不是体积测量。",
+      "warehouse_capacity_units_per_asset": 1
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "基于4-6人帐篷的典型体积，估算为10单位。"
+        ],
+        "evidence_quotes": [],
+        "offer_id": "offer-021",
+        "rationale": "小号帐篷，但可容纳4-6人，体积较大，与单层单人帐相当或略大。",
+        "warehouse_capacity_units_per_asset": 10
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-021",
+      "rationale": "4-6人牛津布标配帐篷，比小型帐锚点有较多布料和支撑部件，设16；与同规格055完全同权重。",
+      "review_adjustment_reason": "4-6人牛津布标配帐篷，比小型帐锚点有较多布料和支撑部件，设16；与同规格055完全同权重。",
+      "warehouse_capacity_units_per_asset": 16
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "假设小号折叠桌尺寸较小，估算为3单位。"
+        ],
+        "evidence_quotes": [],
+        "offer_id": "offer-022",
+        "rationale": "折叠桌，质量中等，占用空间比椅子略大。",
+        "warehouse_capacity_units_per_asset": 3
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-022",
+      "rationale": "小号1-2人碳钢折叠桌按完整桌板与支架收纳，采用与小号50cm桌一致的6档。",
+      "review_adjustment_reason": "小号1-2人碳钢折叠桌按完整桌板与支架收纳，采用与小号50cm桌一致的6档。",
+      "warehouse_capacity_units_per_asset": 6
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "估计睡袋折叠后占用空间与重量成正比，但小于锚定睡袋。"
+        ],
+        "evidence_quotes": [
+          "填充物=化纤",
+          "卡其1kg"
+        ],
+        "offer_id": "offer-023",
+        "rationale": "睡袋填充化纤，重1kg，比锚定睡袋（1.3kg，4 units）略轻，但设计仍需占用一定空间，估算3 units。",
+        "warehouse_capacity_units_per_asset": 3
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "填充物=化纤",
+        "卡其1kg"
+      ],
+      "offer_id": "offer-023",
+      "rationale": "1kg化纤睡袋采用略低于1.3kg睡袋锚点4的档3；仅为同类收纳量级估计。",
+      "review_adjustment_reason": "1kg化纤睡袋采用略低于1.3kg睡袋锚点4的档3；仅为同类收纳量级估计。",
+      "warehouse_capacity_units_per_asset": 3
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "假设1.3kg化纤睡袋与锚定睡袋折叠后占用空间相近。"
+        ],
+        "evidence_quotes": [
+          "填充物=化纤",
+          "米灰1.3kg"
+        ],
+        "offer_id": "offer-024",
+        "rationale": "睡袋填充化纤，重1.3kg，与锚定睡袋重量相近，设计容量取锚定值。",
+        "warehouse_capacity_units_per_asset": 4
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "填充物=化纤",
+        "米灰1.3kg"
+      ],
+      "offer_id": "offer-024",
+      "rationale": "1.3kg化纤睡袋与1.3kg睡袋锚点采用同一4档；没有可靠收纳尺寸支持更细的区分。",
+      "review_adjustment_reason": "1.3kg化纤睡袋与1.3kg睡袋锚点采用同一4档；没有可靠收纳尺寸支持更细的区分。",
+      "warehouse_capacity_units_per_asset": 4
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "蛋巢垫折叠后尺寸估计约35*25*20cm，占用空间中等。"
+        ],
+        "evidence_quotes": [
+          "XPE蓝色带膜180*60*1.8cm"
+        ],
+        "offer_id": "offer-025",
+        "rationale": "防潮垫尺寸180*60*1.8cm，折叠后可能是蛋巢形，体积较大，估计5 units。",
+        "warehouse_capacity_units_per_asset": 5
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "XPE蓝色带膜180*60*1.8cm"
+      ],
+      "offer_id": "offer-025",
+      "rationale": "180×60×1.8cm闭孔泡沫蛋巢垫无法像纯充气垫排空材料；与相近尺寸053统一8档。",
+      "review_adjustment_reason": "180×60×1.8cm闭孔泡沫蛋巢垫无法像纯充气垫排空材料；与相近尺寸053统一8档。",
+      "warehouse_capacity_units_per_asset": 8
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "碳钢椅比铝椅重，但可能更粗大，此处按6 units估计。"
+        ],
+        "evidence_quotes": [
+          "展开尺寸（长/宽/高）:44*44*67",
+          "材质:碳钢"
+        ],
+        "offer_id": "offer-026",
+        "rationale": "碳钢材质，重量3kg，与锚定月亮椅（1.65kg，6 units）相比更重，但结构相近，可能占用类似空间，估计6 units。",
+        "warehouse_capacity_units_per_asset": 6
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "展开尺寸（长/宽/高）:44*44*67",
+        "材质:碳钢"
+      ],
+      "offer_id": "offer-026",
+      "rationale": "碳钢框架升级折叠椅，展开尺寸与锚点相近但框架较重，按稍大的收纳档7估计；不推断包装尺寸。",
+      "review_adjustment_reason": "碳钢框架升级折叠椅，展开尺寸与锚点相近但框架较重，按稍大的收纳档7估计；不推断包装尺寸。",
+      "warehouse_capacity_units_per_asset": 7
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "自充气睡垫折叠后可能卷成圆柱，体积估计近似于防潮垫。"
+        ],
+        "evidence_quotes": [
+          "3cm单人",
+          "自动充气"
+        ],
+        "offer_id": "offer-030",
+        "rationale": "自充气睡垫，3cm厚，单人，占用空间比普通防潮垫大，估计8 units。",
+        "warehouse_capacity_units_per_asset": 8
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "3cm单人",
+        "自动充气"
+      ],
+      "offer_id": "offer-030",
+      "rationale": "单人3cm自充泡沫垫需保留内芯，采用6档；双人同厚006设12，而不是比单人更小。",
+      "review_adjustment_reason": "单人3cm自充泡沫垫需保留内芯，采用6档；双人同厚006设12，而不是比单人更小。",
+      "warehouse_capacity_units_per_asset": 6
+    },
+    {
+      "confidence": "medium",
+      "design_assumptions": [
+        "按完整租赁资产正常收纳状态计量"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-031",
+      "provenance": "fixed_design_anchor",
+      "rationale": "固定人工 few-shot 锚点；相对设计单位，不是体积测量。",
+      "warehouse_capacity_units_per_asset": 2
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "铝制椅子折叠后更紧凑，但仍有支撑结构，估计5 units。"
+        ],
+        "evidence_quotes": [
+          "材质=铝",
+          "沙丘褐小号（承重约300斤）"
+        ],
+        "offer_id": "offer-032",
+        "rationale": "铝制月亮椅，重量1.38kg，比锚定碳钢椅轻但可能小一些，取5 units。",
+        "warehouse_capacity_units_per_asset": 5
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "材质=铝",
+        "沙丘褐小号（承重约300斤）"
+      ],
+      "offer_id": "offer-032",
+      "rationale": "轻量小号铝制月亮椅采用略小于基础椅6的档5，结构和型号提供比较依据，具体收纳尺寸未知。",
+      "review_adjustment_reason": "轻量小号铝制月亮椅采用略小于基础椅6的档5，结构和型号提供比较依据，具体收纳尺寸未知。",
+      "warehouse_capacity_units_per_asset": 5
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "high",
+        "design_assumptions": [
+          "基于折叠尺寸体积比，估算为12 units。"
+        ],
+        "evidence_quotes": [
+          "自动2人天蓝色 （弹压帐篷）",
+          "折叠后尺寸(长*宽*高cm):75×35×35cm"
+        ],
+        "offer_id": "offer-033",
+        "rationale": "2人帐篷，折叠后尺寸75*35*35cm，比锚定单人帐篷（60*20*20，10 units）大，估计12 units。",
+        "warehouse_capacity_units_per_asset": 12
+      },
+      "confidence": "medium",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "自动2人天蓝色 （弹压帐篷）",
+        "折叠后尺寸(长*宽*高cm):75×35×35cm"
+      ],
+      "offer_id": "offer-033",
+      "rationale": "原始公开包装尺寸75×35×35明显大于两个帐篷锚点；对比60×20×20锚点的包围盒量级约3.83倍，设计占用36。保持相对整数而非实测升数。",
+      "review_adjustment_reason": "原始公开包装尺寸75×35×35明显大于两个帐篷锚点；对比60×20×20锚点的包围盒量级约3.83倍，设计占用36。保持相对整数而非实测升数。",
+      "warehouse_capacity_units_per_asset": 36
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "充气垫卷起直径约20cm，长度60cm，体积估计为9 units。"
+        ],
+        "evidence_quotes": [
+          "深蓝色有LOGO|190*58*5cm",
+          "手动"
+        ],
+        "offer_id": "offer-038",
+        "rationale": "充气垫尺寸190*58*5cm，厚5cm，比自充气垫厚，卷起体积可能很大，估计9 units。",
+        "warehouse_capacity_units_per_asset": 9
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "深蓝色有LOGO|190*58*5cm",
+        "手动"
+      ],
+      "offer_id": "offer-038",
+      "rationale": "手动TPU充气垫没有明示泡沫内芯，放气收纳采用较紧凑的3档；不将190×58×5充气尺寸当作打包尺寸。",
+      "review_adjustment_reason": "手动TPU充气垫没有明示泡沫内芯，放气收纳采用较紧凑的3档；不将190×58×5充气尺寸当作打包尺寸。",
+      "warehouse_capacity_units_per_asset": 3
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "化纤填充睡袋，重量1.5kg，未提供收纳尺寸，但设计重量相对较小。"
+        ],
+        "evidence_quotes": [
+          "霁云灰1.5kg【11℃+轻薄款】"
+        ],
+        "offer_id": "offer-039",
+        "rationale": "羽绒睡袋通常较轻且可压缩，但保暖填充物重量略高，参考锚点给4（中空棉），此款化纤1.5kg略小，但不可过小，取3。",
+        "warehouse_capacity_units_per_asset": 3
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "霁云灰1.5kg【11℃+轻薄款】"
+      ],
+      "offer_id": "offer-039",
+      "rationale": "这是1.5kg化纤睡袋，不是羽绒；与1.3kg同类采用4档，轻薄营销标签不足以推出更小收纳体积。",
+      "review_adjustment_reason": "这是1.5kg化纤睡袋，不是羽绒；与1.3kg同类采用4档，轻薄营销标签不足以推出更小收纳体积。",
+      "warehouse_capacity_units_per_asset": 4
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "羽绒填充，重量约0.91kg，未提供收纳尺寸，但可压缩性较好。"
+        ],
+        "evidence_quotes": [
+          "总重量:约910g"
+        ],
+        "offer_id": "offer-044",
+        "rationale": "羽绒睡袋，填充鸭绒，总重910g，压缩性好，但保暖强，尺寸可能略大，参考锚点睡眠袋4，此款稍小。",
+        "warehouse_capacity_units_per_asset": 3
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "总重量:约910g"
+      ],
+      "offer_id": "offer-044",
+      "rationale": "鸭绒睡袋可压缩，公开质量与同系列062相同而收纳尺寸缺失，二者统一3档；不从CW型号数字反推填充质量。",
+      "review_adjustment_reason": "鸭绒睡袋可压缩，公开质量与同系列062相同而收纳尺寸缺失，二者统一3档；不从CW型号数字反推填充质量。",
+      "warehouse_capacity_units_per_asset": 3
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "high",
+        "design_assumptions": [
+          "未提供包装尺寸，但重量轻，参照同类营地灯。"
+        ],
+        "evidence_quotes": [
+          "重量=120g"
+        ],
+        "offer_id": "offer-045",
+        "rationale": "营地灯，尺寸与锚点相似或更小，重量120g，但带电池，相对轻小。锚点轻量营地灯为1。",
+        "warehouse_capacity_units_per_asset": 1
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "重量=120g"
+      ],
+      "offer_id": "offer-045",
+      "rationale": "小型营地灯与灯具锚点共用1档；不依据夸张功率/续航营销值推算体积。",
+      "review_adjustment_reason": "小型营地灯与灯具锚点共用1档；不依据夸张功率/续航营销值推算体积。",
+      "warehouse_capacity_units_per_asset": 1
+    },
+    {
+      "confidence": "medium",
+      "design_assumptions": [
+        "按完整租赁资产正常收纳状态计量"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-048",
+      "provenance": "fixed_design_anchor",
+      "rationale": "固定人工 few-shot 锚点；相对设计单位，不是体积测量。",
+      "warehouse_capacity_units_per_asset": 10
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "2.6L不锈钢锅带蒸笼，体积比1.6L锅大，重量未给。"
+        ],
+        "evidence_quotes": [
+          "+网袋】+蒸笼中号汤煮锅（2.6升)【316不锈钢】"
+        ],
+        "offer_id": "offer-049",
+        "rationale": "汤煮锅2.6L带蒸笼，体积比1.6L锅大，重量未给定，但带蒸笼占空间，锚点1.6L锅为2，此取3。",
+        "warehouse_capacity_units_per_asset": 3
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "+网袋】+蒸笼中号汤煮锅（2.6升)【316不锈钢】"
+      ],
+      "offer_id": "offer-049",
+      "rationale": "2.6L锅与蒸笼作为完整套件，相对1.6L锅锚点2设稍大的3档；不声称已测量套件打包体积。",
+      "review_adjustment_reason": "2.6L锅与蒸笼作为完整套件，相对1.6L锅锚点2设稍大的3档；不声称已测量套件打包体积。",
+      "warehouse_capacity_units_per_asset": 3
+    },
+    {
+      "confidence": "medium",
+      "design_assumptions": [
+        "按完整租赁资产正常收纳状态计量"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-050",
+      "provenance": "fixed_design_anchor",
+      "rationale": "固定人工 few-shot 锚点；相对设计单位，不是体积测量。",
+      "warehouse_capacity_units_per_asset": 8
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "3kg睡袋，比锚点1.3kg睡袋更重更厚，未提供收纳尺寸。"
+        ],
+        "evidence_quotes": [
+          "军绿3KG(190+30)*80cm适宜温度-10℃"
+        ],
+        "offer_id": "offer-051",
+        "rationale": "睡袋3kg,尺寸较大，中空棉填充，未提供收纳尺寸，但比1.3kg的同类睡袋重得多，体积也大，锚点同类睡袋给4，此款更大取5。",
+        "warehouse_capacity_units_per_asset": 5
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "军绿3KG(190+30)*80cm适宜温度-10℃"
+      ],
+      "offer_id": "offer-051",
+      "rationale": "3kg厚中空棉睡袋采用比1.3kg锚点4显著更大的8档；质量和保暖构造提供量级线索，不作精确体积换算。",
+      "review_adjustment_reason": "3kg厚中空棉睡袋采用比1.3kg锚点4显著更大的8档；质量和保暖构造提供量级线索，不作精确体积换算。",
+      "warehouse_capacity_units_per_asset": 8
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "手提灯带把手，重量1kg，体积估计稍大。"
+        ],
+        "evidence_quotes": [
+          "重量=1000g"
+        ],
+        "offer_id": "offer-052",
+        "rationale": "手提充电灯，重量1kg，带把手，体积较大，但小于整个睡袋，参考营地灯锚点1，给2。",
+        "warehouse_capacity_units_per_asset": 2
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "重量=1000g"
+      ],
+      "offer_id": "offer-052",
+      "rationale": "带把手的1kg充电灯按完整外壳和电池组件估计2档，大于小型灯锚点1。",
+      "review_adjustment_reason": "带把手的1kg充电灯按完整外壳和电池组件估计2档，大于小型灯锚点1。",
+      "warehouse_capacity_units_per_asset": 2
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "泡沫垫厚度1.8cm，可卷起，但长度较长，占用体积大。"
+        ],
+        "evidence_quotes": [
+          "蓝色配黑色186*56*1.8cm"
+        ],
+        "offer_id": "offer-053",
+        "rationale": "防潮垫，闭合泡沫垫，尺寸186x56x1.8cm，折叠后可能卷起，类似体积较大，但可卷紧，参考锚点无直接对应，根据体积取4。",
+        "warehouse_capacity_units_per_asset": 4
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "蓝色配黑色186*56*1.8cm"
+      ],
+      "offer_id": "offer-053",
+      "rationale": "186×56×1.8cm泡沫垫与025的公开尺寸相近，统一8档；折叠不会消除闭孔泡沫本体。",
+      "review_adjustment_reason": "186×56×1.8cm泡沫垫与025的公开尺寸相近，统一8档；折叠不会消除闭孔泡沫本体。",
+      "warehouse_capacity_units_per_asset": 8
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "克米特椅，重量2.3kg，未提供收纳尺寸，但椅架可折叠。"
+        ],
+        "evidence_quotes": [
+          "单椅重量:2.3kg"
+        ],
+        "offer_id": "offer-054",
+        "rationale": "克米特椅，重量2.3kg，展开尺寸较大，但收纳后可能类似月亮椅，锚点月亮椅给6，此款更重，高背，但展开尺寸略小，取7。",
+        "warehouse_capacity_units_per_asset": 7
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "单椅重量:2.3kg"
+      ],
+      "offer_id": "offer-054",
+      "rationale": "克米特框架加扶手采用比基本月亮椅6略大的8档；与相同公开质量的069同类统一，不伪造折叠尺寸。",
+      "review_adjustment_reason": "克米特框架加扶手采用比基本月亮椅6略大的8档；与相同公开质量的069同类统一，不伪造折叠尺寸。",
+      "warehouse_capacity_units_per_asset": 8
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "基于可比2-3人速开帐篷占8-10空间单位，4-6人帐篷空间略大但小于大型10+人帐篷。",
+          "未提供打包尺寸，使用同类帐篷空间估计。"
+        ],
+        "evidence_quotes": [
+          "小号4-6人咖啡色银胶布标配帐篷"
+        ],
+        "offer_id": "offer-055",
+        "rationale": "折叠帐篷，承载2-3人重约2kg，占用容积约40-60L，但使用10为成人帐篷基准，中号4-6人帐篷较单人帐篷略大，使用8。",
+        "warehouse_capacity_units_per_asset": 8
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "小号4-6人咖啡色银胶布标配帐篷"
+      ],
+      "offer_id": "offer-055",
+      "rationale": "与021具有相同名称、SKU规格和公开物理属性，统一16；保留不同offer ID，不声称这是2-3人或2kg的小帐。",
+      "review_adjustment_reason": "与021具有相同名称、SKU规格和公开物理属性，统一16；保留不同offer ID，不声称这是2-3人或2kg的小帐。",
+      "warehouse_capacity_units_per_asset": 16
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "中号煎锅直径大约24-26cm，厚度5cm，收纳袋使总占用类似体积的简单锅具。",
+          "未提供打包尺寸，基于同类锅具估计。"
+        ],
+        "evidence_quotes": [
+          "中号煎锅+收纳袋"
+        ],
+        "offer_id": "offer-056",
+        "rationale": "中号煎锅（约24-26cm）加收纳袋，作为炊具占用空间高于锅具类基础（2）但低于大型1.6L煮锅+配件（可能占用3-4）。相似不锈钢锅具可比offer-031用2，这里中号直径较大稍高。",
+        "warehouse_capacity_units_per_asset": 3
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "中号煎锅+收纳袋"
+      ],
+      "offer_id": "offer-056",
+      "rationale": "中号煎锅与收纳袋作为一件资产，同类锅具统一2档；没有来源支持虚构24-26cm直径或5cm高度。",
+      "review_adjustment_reason": "中号煎锅与收纳袋作为一件资产，同类锅具统一2档；没有来源支持虚构24-26cm直径或5cm高度。",
+      "warehouse_capacity_units_per_asset": 2
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "基于折叠尺寸约60x60x20cm，比普通露营椅（约15x15x70=0.023立方）大很多。",
+          "未提供打包尺寸，给出保守估计。"
+        ],
+        "evidence_quotes": [
+          "展开尺寸（长/宽/高）: 83*70*60",
+          "材质: 碳钢合金",
+          "单椅重量: 4kg"
+        ],
+        "offer_id": "offer-058",
+        "rationale": "可折叠躺椅带脚托，支撑架和面料占用空间大于基础月亮椅（offer-009=6），但小于大帐篷。假设折叠后尺寸类似为60x60x20cm左右。",
+        "warehouse_capacity_units_per_asset": 12
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "展开尺寸（长/宽/高）: 83*70*60",
+        "材质: 碳钢合金",
+        "单椅重量: 4kg"
+      ],
+      "offer_id": "offer-058",
+      "rationale": "大幅展开的脚托躺椅包含额外支撑件，估计12档，为基础月亮椅6的两倍；不是基于虚构打包尺寸。",
+      "review_adjustment_reason": "大幅展开的脚托躺椅包含额外支撑件，估计12档，为基础月亮椅6的两倍；不是基于虚构打包尺寸。",
+      "warehouse_capacity_units_per_asset": 12
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "羽绒睡袋可压缩收纳至直径约15cm，长度25cm，占用空间约0.005立方。",
+          "未提供压缩后尺寸，基于常见羽绒睡袋估计。"
+        ],
+        "evidence_quotes": [
+          "填充物=鹅毛绒"
+        ],
+        "offer_id": "offer-059",
+        "rationale": "羽绒睡袋可压缩性高，400g填充量总重约800g，压缩后体积小，与露营灯可比（1）。",
+        "warehouse_capacity_units_per_asset": 1
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "填充物=鹅毛绒"
+      ],
+      "offer_id": "offer-059",
+      "rationale": "400g标称羽绒轻量款采用紧凑2档，低于同系列常规鸭绒3；不把标称400g当总重，也不添加800g总重。",
+      "review_adjustment_reason": "400g标称羽绒轻量款采用紧凑2档，低于同系列常规鸭绒3；不把标称400g当总重，也不添加800g总重。",
+      "warehouse_capacity_units_per_asset": 2
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "压缩包尺寸估计约20x20x25cm，占用空间约0.01立方。",
+          "未提供打包尺寸，基于同类羽绒睡袋估计。"
+        ],
+        "evidence_quotes": [
+          "总重量:约910g"
+        ],
+        "offer_id": "offer-062",
+        "rationale": "鸭绒睡袋可压缩，总重量约910g，压缩后体积小，与offer-059相近，但信封式可能稍大，仍属于低空间占用。",
+        "warehouse_capacity_units_per_asset": 1
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "总重量:约910g"
+      ],
+      "offer_id": "offer-062",
+      "rationale": "公开质量与同系列044相同，且无可靠收纳尺寸，统一鸭绒睡袋3档；不凭型号或温标捏造精确体积差。",
+      "review_adjustment_reason": "公开质量与同系列044相同，且无可靠收纳尺寸，统一鸭绒睡袋3档；不凭型号或温标捏造精确体积差。",
+      "warehouse_capacity_units_per_asset": 3
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "未提供打包尺寸，基于常见2-3人帐篷体积（约55x15x15cm）。"
+        ],
+        "evidence_quotes": [
+          "*2-3人双门 橙绿色、单个帐篷"
+        ],
+        "offer_id": "offer-064",
+        "rationale": "速开2-3人帐篷，重量普通，打包体积比单人帐篷10稍大但小于4-6人。参照同类2-3人速开占6。",
+        "warehouse_capacity_units_per_asset": 6
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "*2-3人双门 橙绿色、单个帐篷"
+      ],
+      "offer_id": "offer-064",
+      "rationale": "2-3人速开帐按相对单人速开锚点10稍大的12档估计；无打包尺寸，不新增55×15×15之类数字。",
+      "review_adjustment_reason": "2-3人速开帐按相对单人速开锚点10稍大的12档估计；无打包尺寸，不新增55×15×15之类数字。",
+      "warehouse_capacity_units_per_asset": 12
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "泡沫垫可卷成直径~20cm，长60cm的卷，占地小。",
+          "未提供打包尺寸，基于IXPE泡沫垫可折叠性估计。"
+        ],
+        "evidence_quotes": [
+          "双人橙色覆铝膜200*120*1.8cm"
+        ],
+        "offer_id": "offer-065",
+        "rationale": "泡沫垫可卷缩或折叠，虽然面积大但很薄，压缩后体积小。类似地垫占1或2。",
+        "warehouse_capacity_units_per_asset": 1
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "双人橙色覆铝膜200*120*1.8cm"
+      ],
+      "offer_id": "offer-065",
+      "rationale": "双人泡沫垫200×120×1.8cm公开材料量级约为025单人的2.2倍，设18档；不将泡沫压缩成近乎零占用。",
+      "review_adjustment_reason": "双人泡沫垫200×120×1.8cm公开材料量级约为025单人的2.2倍，设18档；不将泡沫压缩成近乎零占用。",
+      "warehouse_capacity_units_per_asset": 18
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "可折叠为约40x15x20cm，相当于1单位。",
+          "未提供打包尺寸，基于IXPE垫常见形状估计。"
+        ],
+        "evidence_quotes": [
+          "长度:186cm"
+        ],
+        "offer_id": "offer-066",
+        "rationale": "单人蛋巢垫，长186cm，可折叠或卷起，厚度约1-2cm，占用空间小。参照同类垫。",
+        "warehouse_capacity_units_per_asset": 1
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "长度:186cm"
+      ],
+      "offer_id": "offer-066",
+      "rationale": "186cm蛋巢垫缺少完整宽厚数据，采用同类单人泡沫垫8档作为明确的低置信度设计估计。",
+      "review_adjustment_reason": "186cm蛋巢垫缺少完整宽厚数据，采用同类单人泡沫垫8档作为明确的低置信度设计估计。",
+      "warehouse_capacity_units_per_asset": 8
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "体积按三人床垫估算，未提供折叠尺寸，但厚度较大，占用空间较大。"
+        ],
+        "evidence_quotes": [
+          "【浅卡其】8cm自动充气垫-三人款",
+          "8cm"
+        ],
+        "offer_id": "offer-067",
+        "rationale": "三人自动充气垫，厚度8cm，充气后体积较大，但可压缩卷起，重量估计约4kg。相比固定的蛋卷桌或帐篷，占用空间中等偏大。",
+        "warehouse_capacity_units_per_asset": 14
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "【浅卡其】8cm自动充气垫-三人款",
+        "8cm"
+      ],
+      "offer_id": "offer-067",
+      "rationale": "三人8cm记忆棉自充垫在收纳时仍保留较多泡沫内芯，采用30档，高于双人5cm的16档；不添加总重或收纳尺寸。",
+      "review_adjustment_reason": "三人8cm记忆棉自充垫在收纳时仍保留较多泡沫内芯，采用30档，高于双人5cm的16档；不添加总重或收纳尺寸。",
+      "warehouse_capacity_units_per_asset": 30
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "蛋卷桌通常折叠后为长条圆柱状，体积较大，估算w为5。"
+        ],
+        "evidence_quotes": [
+          "拉环款黑色蛋卷桌90款"
+        ],
+        "offer_id": "offer-068",
+        "rationale": "蛋卷桌90cm，可折叠成蛋卷状，桌板收纳成卷，但会占用较大体积，类似固定蛋卷桌锚定的90款（未提供，参考同类），重量约2-3kg。",
+        "warehouse_capacity_units_per_asset": 5
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "拉环款黑色蛋卷桌90款"
+      ],
+      "offer_id": "offer-068",
+      "rationale": "90款蛋卷桌需收纳桌板与支架，采用10档，高于小号1-2人桌6；不声称有精确打包尺寸或总重。",
+      "review_adjustment_reason": "90款蛋卷桌需收纳桌板与支架，采用10档，高于小号1-2人桌6；不声称有精确打包尺寸或总重。",
+      "warehouse_capacity_units_per_asset": 10
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "medium",
+        "design_assumptions": [
+          "儿童椅展开尺寸相近，但折叠后可能体积相近，取略高于月亮椅的6。"
+        ],
+        "evidence_quotes": [
+          "展开尺寸（长/宽/高）",
+          "材质: 碳钢+牛津布",
+          "最大承重: 200kg",
+          "单椅重量: 2.3kg"
+        ],
+        "offer_id": "offer-069",
+        "rationale": "儿童款克米特椅，尺寸53*52*72cm，类似成人款但较小，重量2.3kg，参照固定锚点月亮椅，展开尺寸相近，折叠后可能稍大，占用空间略多。",
+        "warehouse_capacity_units_per_asset": 7
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "展开尺寸（长/宽/高）",
+        "材质: 碳钢+牛津布",
+        "最大承重: 200kg",
+        "单椅重量: 2.3kg"
+      ],
+      "offer_id": "offer-069",
+      "rationale": "儿童款标签与公开展开尺寸的相对大小不一致，质量与054同为2.3kg；不单凭标签缩小，按同类克米特框架统一8档并保留低置信度。",
+      "review_adjustment_reason": "儿童款标签与公开展开尺寸的相对大小不一致，质量与054同为2.3kg；不单凭标签缩小，按同类克米特框架统一8档并保留低置信度。",
+      "warehouse_capacity_units_per_asset": 8
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "三人充气床垫，放气后可折叠成小包，但包含泵和织物，体积估计中等偏大。"
+        ],
+        "evidence_quotes": [
+          "【标准版】 TPU三人充气床垫+锂电泵",
+          "TPU"
+        ],
+        "offer_id": "offer-071",
+        "rationale": "TPU三人充气床垫，带锂电泵，充气后大但可放气折叠，但重量和体积可能较大。",
+        "warehouse_capacity_units_per_asset": 10
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "【标准版】 TPU三人充气床垫+锂电泵",
+        "TPU"
+      ],
+      "offer_id": "offer-071",
+      "rationale": "三人TPU充气床和锂电泵整体采用10档；可放气但必须包含泵与床体，不当作无占用。",
+      "review_adjustment_reason": "三人TPU充气床和锂电泵整体采用10档；可放气但必须包含泵与床体，不当作无占用。",
+      "warehouse_capacity_units_per_asset": 10
+    },
+    {
+      "confidence": "medium",
+      "design_assumptions": [
+        "按完整租赁资产正常收纳状态计量"
+      ],
+      "evidence_quotes": [],
+      "offer_id": "offer-073",
+      "provenance": "fixed_design_anchor",
+      "rationale": "固定人工 few-shot 锚点；相对设计单位，不是体积测量。",
+      "warehouse_capacity_units_per_asset": 4
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "直径约20cm，高30cm，体积大约6升。"
+        ],
+        "evidence_quotes": [
+          "时钟遥控款-户外手提灯【充一次续航60天】三挡色温全方位环绕发光"
+        ],
+        "offer_id": "offer-076",
+        "rationale": "大型手提灯，带时钟遥控，体积比普通营地灯大，但小于帐篷。",
+        "warehouse_capacity_units_per_asset": 2
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "时钟遥控款-户外手提灯【充一次续航60天】三挡色温全方位环绕发光"
+      ],
+      "offer_id": "offer-076",
+      "rationale": "时钟遥控手提灯采用比小型灯锚点1略大的2档；不添加直径、高度或所谓6升体积。",
+      "review_adjustment_reason": "时钟遥控手提灯采用比小型灯锚点1略大的2档；不添加直径、高度或所谓6升体积。",
+      "warehouse_capacity_units_per_asset": 2
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "蛋卷桌50cm，折叠后长度约50cm，占用空间较小。"
+        ],
+        "evidence_quotes": [
+          "小号50cm蛋卷桌（1-2人）"
+        ],
+        "offer_id": "offer-078",
+        "rationale": "小号50cm蛋卷桌，比90款小很多，但折叠后仍有一定长度。",
+        "warehouse_capacity_units_per_asset": 2
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "小号50cm蛋卷桌（1-2人）"
+      ],
+      "offer_id": "offer-078",
+      "rationale": "50cm小号1-2人蛋卷桌采用与022相同6档，低于90款10；只用公开型号尺度作粗粒度比较。",
+      "review_adjustment_reason": "50cm小号1-2人蛋卷桌采用与022相同6档，低于90款10；只用公开型号尺度作粗粒度比较。",
+      "warehouse_capacity_units_per_asset": 6
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "双人充气床垫放气后体积中等。"
+        ],
+        "evidence_quotes": [
+          "【内置蓄电泵】加宽双人充气床（米白色）",
+          "PVC"
+        ],
+        "offer_id": "offer-082",
+        "rationale": "双人充气床，内置泵，体积中等，与三人垫相似但小一些。",
+        "warehouse_capacity_units_per_asset": 8
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "【内置蓄电泵】加宽双人充气床（米白色）",
+        "PVC"
+      ],
+      "offer_id": "offer-082",
+      "rationale": "双人PVC床体和内置蓄电泵一起采用8档，低于三人加泵071的10；不将内置泵剔除，也不推断打包尺寸。",
+      "review_adjustment_reason": "双人PVC床体和内置蓄电泵一起采用8档，低于三人加泵071的10；不将内置泵剔除，也不推断打包尺寸。",
+      "warehouse_capacity_units_per_asset": 8
+    },
+    {
+      "annotation_before_review": {
+        "confidence": "low",
+        "design_assumptions": [
+          "铝合金材质，可能轻便，折叠后体积与普通桌子相似。"
+        ],
+        "evidence_quotes": [
+          "OW-4837 IGT速开侧桌"
+        ],
+        "offer_id": "offer-084",
+        "rationale": "铝合金速开侧桌，折叠后可能为平板状，体积不大。",
+        "warehouse_capacity_units_per_asset": 5
+      },
+      "confidence": "low",
+      "design_assumptions": [
+        "按正常收纳的完整资产估计相对空间消耗；更大的占用数值消耗更多N。",
+        "这是与固定锚点对比的粗粒度设计估计，不新增原始来源没有的打包尺寸、总重或体积测量。缺少收纳尺寸时，不声称该估计为真值。"
+      ],
+      "evidence_quotes": [
+        "OW-4837 IGT速开侧桌"
+      ],
+      "offer_id": "offer-084",
+      "rationale": "铝合金速开侧桌按完整桌板和支架采用5档，属于小桌量级；具体收纳结构和尺寸未知。",
+      "review_adjustment_reason": "铝合金速开侧桌按完整桌板和支架采用5档，属于小桌量级；具体收纳结构和尺寸未知。",
+      "warehouse_capacity_units_per_asset": 5
+    }
+  ],
+  "review_source_sha256": {
+    "consistency_review.json": "098e192ed30ebaada3c4106b5f241cda7755a7bdf563a156be741fd495c6d5fd",
+    "primary_weight_review.json": "cd8b0b6507483fa3814e48a52f9b3f706fa6afc4a47048c464b7a6bc3bd9d19d",
+    "warehouse_capacity_weights.candidate.json": "ecbd2b3dc51af5978a0af5ad72cf3645361a79148dc438f2469f272503e9ac5f"
+  },
+  "review_status": "approved",
+  "unit_semantics": "relative_integer_stowed_whole_asset_not_liters"
+}

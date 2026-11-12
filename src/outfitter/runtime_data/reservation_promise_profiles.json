@@ -1,0 +1,765 @@
+{
+  "deposit_policies": {
+    "canonical_reference_v1": {
+      "description": "Initial value is the V15 exact deposit of the lowest-cost active member; an existing non-null value is immutable across catalog updates.",
+      "kind": "frozen_profile_table"
+    },
+    "flat20_v1": {
+      "kind": "flat_per_asset",
+      "unit_deposit_cny": 20.0
+    },
+    "flat40_v1": {
+      "kind": "flat_per_asset",
+      "unit_deposit_cny": 40.0
+    }
+  },
+  "format": "outfitter-reservation-promise-profiles-v1",
+  "profiles": [
+    {
+      "capacity_per_asset": 1,
+      "family_id": "chair.adult.style.v1",
+      "member_offer_ids": [
+        "offer-026",
+        "offer-054",
+        "offer-058"
+      ],
+      "profile_id": "chair.adult.comfort.v1",
+      "public_guarantee": {
+        "audience": "adult",
+        "chair_style": "comfort"
+      },
+      "service_key": "rental:camp_chair",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "chair.adult.style.v1",
+      "member_offer_ids": [
+        "offer-009",
+        "offer-019",
+        "offer-032"
+      ],
+      "profile_id": "chair.adult.lightweight.v1",
+      "public_guarantee": {
+        "audience": "adult",
+        "chair_style": "lightweight"
+      },
+      "service_key": "rental:camp_chair",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "chair.child.style.v1",
+      "member_offer_ids": [
+        "offer-069"
+      ],
+      "profile_id": "chair.child.comfort.v1",
+      "public_guarantee": {
+        "audience": "child",
+        "chair_style": "comfort"
+      },
+      "service_key": "rental:camp_chair",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "chair.child.style.v1",
+      "member_offer_ids": [],
+      "profile_id": "chair.child.lightweight.v1",
+      "public_guarantee": {
+        "audience": "child",
+        "chair_style": "lightweight"
+      },
+      "service_key": "rental:camp_chair",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": null,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "cookware.function.v1",
+      "member_offer_ids": [
+        "offer-011",
+        "offer-031",
+        "offer-049",
+        "offer-056"
+      ],
+      "profile_id": "cookware.boil.v1",
+      "public_guarantee": {
+        "guaranteed_functions": [
+          "boil"
+        ]
+      },
+      "service_key": "rental:camp_cookware",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "cookware.function.v1",
+      "member_offer_ids": [
+        "offer-049"
+      ],
+      "profile_id": "cookware.boil_stew.v1",
+      "public_guarantee": {
+        "guaranteed_functions": [
+          "boil",
+          "stew"
+        ]
+      },
+      "service_key": "rental:camp_cookware",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 27.75,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "cookware.function.v1",
+      "member_offer_ids": [
+        "offer-011",
+        "offer-056"
+      ],
+      "profile_id": "cookware.fry.v1",
+      "public_guarantee": {
+        "guaranteed_functions": [
+          "fry"
+        ]
+      },
+      "service_key": "rental:camp_cookware",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "lantern.runtime.v1",
+      "member_offer_ids": [
+        "offer-045",
+        "offer-076"
+      ],
+      "profile_id": "lantern.runtime_16h_plus.v1",
+      "public_guarantee": {
+        "minimum_runtime_hours": 16
+      },
+      "service_key": "rental:camp_lantern",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 51.52,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "lantern.runtime.v1",
+      "member_offer_ids": [
+        "offer-045",
+        "offer-076"
+      ],
+      "profile_id": "lantern.runtime_24h_plus.v1",
+      "public_guarantee": {
+        "minimum_runtime_hours": 24
+      },
+      "service_key": "rental:camp_lantern",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 51.52,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "lantern.runtime.v1",
+      "member_offer_ids": [
+        "offer-045",
+        "offer-076"
+      ],
+      "profile_id": "lantern.runtime_32h_plus.v1",
+      "public_guarantee": {
+        "minimum_runtime_hours": 32
+      },
+      "service_key": "rental:camp_lantern",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 51.52,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "lantern.runtime.v1",
+      "member_offer_ids": [
+        "offer-045",
+        "offer-076"
+      ],
+      "profile_id": "lantern.runtime_40h_plus.v1",
+      "public_guarantee": {
+        "minimum_runtime_hours": 40
+      },
+      "service_key": "rental:camp_lantern",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 51.52,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "lantern.runtime.v1",
+      "member_offer_ids": [
+        "offer-020",
+        "offer-045",
+        "offer-052",
+        "offer-076"
+      ],
+      "profile_id": "lantern.runtime_6h_plus.v1",
+      "public_guarantee": {
+        "minimum_runtime_hours": 6
+      },
+      "service_key": "rental:camp_lantern",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "lantern.runtime.v1",
+      "member_offer_ids": [
+        "offer-020",
+        "offer-045",
+        "offer-076"
+      ],
+      "profile_id": "lantern.runtime_8h_plus.v1",
+      "public_guarantee": {
+        "minimum_runtime_hours": 8
+      },
+      "service_key": "rental:camp_lantern",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_bag.adult_regular.temperature.v1",
+      "member_offer_ids": [
+        "offer-044",
+        "offer-051"
+      ],
+      "profile_id": "sleeping_bag.adult_regular.comfort_-10c_or_lower.v1",
+      "public_guarantee": {
+        "comfort_temp_c_max": -10,
+        "size_class": "adult_regular"
+      },
+      "service_key": "rental:sleeping_bag",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 34.65,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_bag.adult_regular.temperature.v1",
+      "member_offer_ids": [
+        "offer-044",
+        "offer-051",
+        "offer-062"
+      ],
+      "profile_id": "sleeping_bag.adult_regular.comfort_0c_or_lower.v1",
+      "public_guarantee": {
+        "comfort_temp_c_max": 0,
+        "size_class": "adult_regular"
+      },
+      "service_key": "rental:sleeping_bag",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 34.65,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_bag.adult_regular.temperature.v1",
+      "member_offer_ids": [
+        "offer-024",
+        "offer-039",
+        "offer-044",
+        "offer-051",
+        "offer-059",
+        "offer-062",
+        "offer-073"
+      ],
+      "profile_id": "sleeping_bag.adult_regular.comfort_15c_or_lower.v1",
+      "public_guarantee": {
+        "comfort_temp_c_max": 15,
+        "size_class": "adult_regular"
+      },
+      "service_key": "rental:sleeping_bag",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_bag.adult_regular.temperature.v1",
+      "member_offer_ids": [
+        "offer-023",
+        "offer-024",
+        "offer-039",
+        "offer-044",
+        "offer-051",
+        "offer-059",
+        "offer-062",
+        "offer-073"
+      ],
+      "profile_id": "sleeping_bag.adult_regular.comfort_20c_or_lower.v1",
+      "public_guarantee": {
+        "comfort_temp_c_max": 20,
+        "size_class": "adult_regular"
+      },
+      "service_key": "rental:sleeping_bag",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_bag.adult_regular.temperature.v1",
+      "member_offer_ids": [
+        "offer-044",
+        "offer-051",
+        "offer-059",
+        "offer-062"
+      ],
+      "profile_id": "sleeping_bag.adult_regular.comfort_5c_or_lower.v1",
+      "public_guarantee": {
+        "comfort_temp_c_max": 5,
+        "size_class": "adult_regular"
+      },
+      "service_key": "rental:sleeping_bag",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 34.65,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_bag.child.temperature.v1",
+      "member_offer_ids": [],
+      "profile_id": "sleeping_bag.child.comfort_-10c_or_lower.v1",
+      "public_guarantee": {
+        "comfort_temp_c_max": -10,
+        "size_class": "child"
+      },
+      "service_key": "rental:sleeping_bag",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": null,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_bag.child.temperature.v1",
+      "member_offer_ids": [],
+      "profile_id": "sleeping_bag.child.comfort_0c_or_lower.v1",
+      "public_guarantee": {
+        "comfort_temp_c_max": 0,
+        "size_class": "child"
+      },
+      "service_key": "rental:sleeping_bag",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": null,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_bag.child.temperature.v1",
+      "member_offer_ids": [],
+      "profile_id": "sleeping_bag.child.comfort_15c_or_lower.v1",
+      "public_guarantee": {
+        "comfort_temp_c_max": 15,
+        "size_class": "child"
+      },
+      "service_key": "rental:sleeping_bag",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": null,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_bag.child.temperature.v1",
+      "member_offer_ids": [],
+      "profile_id": "sleeping_bag.child.comfort_20c_or_lower.v1",
+      "public_guarantee": {
+        "comfort_temp_c_max": 20,
+        "size_class": "child"
+      },
+      "service_key": "rental:sleeping_bag",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": null,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_bag.child.temperature.v1",
+      "member_offer_ids": [],
+      "profile_id": "sleeping_bag.child.comfort_5c_or_lower.v1",
+      "public_guarantee": {
+        "comfort_temp_c_max": 5,
+        "size_class": "child"
+      },
+      "service_key": "rental:sleeping_bag",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": null,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_pad.air_mattress.capacity.v1",
+      "member_offer_ids": [
+        "offer-038"
+      ],
+      "profile_id": "sleeping_pad.air_mattress.slots_1.v1",
+      "public_guarantee": {
+        "pad_type": "air_mattress",
+        "sleep_slots": 1
+      },
+      "service_key": "rental:sleeping_pad",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 26.95,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 2,
+      "family_id": "sleeping_pad.air_mattress.capacity.v1",
+      "member_offer_ids": [
+        "offer-010",
+        "offer-082"
+      ],
+      "profile_id": "sleeping_pad.air_mattress.slots_2.v1",
+      "public_guarantee": {
+        "pad_type": "air_mattress",
+        "sleep_slots": 2
+      },
+      "service_key": "rental:sleeping_pad",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 166.65,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 3,
+      "family_id": "sleeping_pad.air_mattress.capacity.v1",
+      "member_offer_ids": [
+        "offer-071"
+      ],
+      "profile_id": "sleeping_pad.air_mattress.slots_3.v1",
+      "public_guarantee": {
+        "pad_type": "air_mattress",
+        "sleep_slots": 3
+      },
+      "service_key": "rental:sleeping_pad",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 1869.45,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_pad.closed_cell_foam_pad.capacity.v1",
+      "member_offer_ids": [
+        "offer-025",
+        "offer-066"
+      ],
+      "profile_id": "sleeping_pad.closed_cell_foam_pad.slots_1.v1",
+      "public_guarantee": {
+        "pad_type": "closed_cell_foam_pad",
+        "sleep_slots": 1
+      },
+      "service_key": "rental:sleeping_pad",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 2,
+      "family_id": "sleeping_pad.closed_cell_foam_pad.capacity.v1",
+      "member_offer_ids": [
+        "offer-065"
+      ],
+      "profile_id": "sleeping_pad.closed_cell_foam_pad.slots_2.v1",
+      "public_guarantee": {
+        "pad_type": "closed_cell_foam_pad",
+        "sleep_slots": 2
+      },
+      "service_key": "rental:sleeping_pad",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 25.7,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 3,
+      "family_id": "sleeping_pad.closed_cell_foam_pad.capacity.v1",
+      "member_offer_ids": [
+        "offer-053"
+      ],
+      "profile_id": "sleeping_pad.closed_cell_foam_pad.slots_3.v1",
+      "public_guarantee": {
+        "pad_type": "closed_cell_foam_pad",
+        "sleep_slots": 3
+      },
+      "service_key": "rental:sleeping_pad",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "sleeping_pad.self_inflating_pad.capacity.v1",
+      "member_offer_ids": [
+        "offer-018",
+        "offer-030"
+      ],
+      "profile_id": "sleeping_pad.self_inflating_pad.slots_1.v1",
+      "public_guarantee": {
+        "pad_type": "self_inflating_pad",
+        "sleep_slots": 1
+      },
+      "service_key": "rental:sleeping_pad",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 27.2,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 2,
+      "family_id": "sleeping_pad.self_inflating_pad.capacity.v1",
+      "member_offer_ids": [
+        "offer-006"
+      ],
+      "profile_id": "sleeping_pad.self_inflating_pad.slots_2.v1",
+      "public_guarantee": {
+        "pad_type": "self_inflating_pad",
+        "sleep_slots": 2
+      },
+      "service_key": "rental:sleeping_pad",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 86.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 3,
+      "family_id": "sleeping_pad.self_inflating_pad.capacity.v1",
+      "member_offer_ids": [
+        "offer-067"
+      ],
+      "profile_id": "sleeping_pad.self_inflating_pad.slots_3.v1",
+      "public_guarantee": {
+        "pad_type": "self_inflating_pad",
+        "sleep_slots": 3
+      },
+      "service_key": "rental:sleeping_pad",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 210.4,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "table.general.v1",
+      "member_offer_ids": [
+        "offer-022",
+        "offer-068",
+        "offer-078",
+        "offer-084"
+      ],
+      "profile_id": "table.general.v1",
+      "public_guarantee": {
+        "service": "camp_table"
+      },
+      "service_key": "rental:camp_table",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 20.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 1,
+      "family_id": "tent.capacity.v1",
+      "member_offer_ids": [
+        "offer-001",
+        "offer-021",
+        "offer-033",
+        "offer-048",
+        "offer-050",
+        "offer-055",
+        "offer-064"
+      ],
+      "profile_id": "tent.capacity_1plus.v1",
+      "public_guarantee": {
+        "minimum_capacity_persons": 1
+      },
+      "service_key": "rental:tent",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 29.85,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 2,
+      "family_id": "tent.capacity.v1",
+      "member_offer_ids": [
+        "offer-001",
+        "offer-021",
+        "offer-033",
+        "offer-050",
+        "offer-055",
+        "offer-064"
+      ],
+      "profile_id": "tent.capacity_2plus.v1",
+      "public_guarantee": {
+        "minimum_capacity_persons": 2
+      },
+      "service_key": "rental:tent",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 53.77,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 3,
+      "family_id": "tent.capacity.v1",
+      "member_offer_ids": [
+        "offer-001",
+        "offer-021",
+        "offer-050",
+        "offer-055",
+        "offer-064"
+      ],
+      "profile_id": "tent.capacity_3plus.v1",
+      "public_guarantee": {
+        "minimum_capacity_persons": 3
+      },
+      "service_key": "rental:tent",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 53.77,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 4,
+      "family_id": "tent.capacity.v1",
+      "member_offer_ids": [
+        "offer-001",
+        "offer-021",
+        "offer-055"
+      ],
+      "profile_id": "tent.capacity_4plus.v1",
+      "public_guarantee": {
+        "minimum_capacity_persons": 4
+      },
+      "service_key": "rental:tent",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 300.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 5,
+      "family_id": "tent.capacity.v1",
+      "member_offer_ids": [
+        "offer-001",
+        "offer-021",
+        "offer-055"
+      ],
+      "profile_id": "tent.capacity_5plus.v1",
+      "public_guarantee": {
+        "minimum_capacity_persons": 5
+      },
+      "service_key": "rental:tent",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 300.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    },
+    {
+      "capacity_per_asset": 6,
+      "family_id": "tent.capacity.v1",
+      "member_offer_ids": [
+        "offer-001",
+        "offer-021",
+        "offer-055"
+      ],
+      "profile_id": "tent.capacity_6plus.v1",
+      "public_guarantee": {
+        "minimum_capacity_persons": 6
+      },
+      "service_key": "rental:tent",
+      "unit_deposit_cny_by_policy": {
+        "canonical_reference_v1": 300.0,
+        "flat20_v1": 20.0,
+        "flat40_v1": 40.0
+      }
+    }
+  ],
+  "schema_version": "reservation-promise-profile-v1",
+  "source_catalog_sha256": "80f672b6330377536d8ec0c6211855059db844d52b1be7eacc8d10b84369b23b"
+}

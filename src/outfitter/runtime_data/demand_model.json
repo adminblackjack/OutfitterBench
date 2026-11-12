@@ -1,0 +1,434 @@
+{
+  "accessibility_factor_range": [
+    0.65,
+    1.45
+  ],
+  "accessibility_scores": {
+    "high": 1.0,
+    "low": -1.0,
+    "medium": 0.0
+  },
+  "choice_taste_range": [
+    -0.05,
+    0.05
+  ],
+  "context_accessibility_scores": {
+    "day_picnic": -0.2,
+    "emergency_rain": -0.6,
+    "hot_water_need": -0.4,
+    "overnight_camping": -0.35,
+    "solo_hiking": -0.4,
+    "supply_stop": 0.25
+  },
+  "context_urgency_scores": {
+    "day_picnic": 0.2,
+    "emergency_rain": 1.0,
+    "hot_water_need": 0.7,
+    "overnight_camping": 0.35,
+    "solo_hiking": 0.3,
+    "supply_stop": 0.0
+  },
+  "customer_segments": {
+    "balanced": {
+      "functional_weight": 1.0,
+      "quality_weight": 1.0,
+      "reservation_multiplier": 1.0,
+      "share": 0.35
+    },
+    "need_driven": {
+      "functional_weight": 1.25,
+      "quality_weight": 0.8,
+      "reservation_multiplier": 1.2,
+      "share": 0.15
+    },
+    "price_sensitive": {
+      "functional_weight": 1.0,
+      "quality_weight": 0.6,
+      "reservation_multiplier": 0.8,
+      "share": 0.35
+    },
+    "quality_seeking": {
+      "functional_weight": 1.1,
+      "quality_weight": 1.5,
+      "reservation_multiplier": 1.05,
+      "share": 0.15
+    }
+  },
+  "format": "outfitter-bounded-reservation-demand-v1",
+  "group_parameters": [
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "comfort_chair",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "high",
+      "reservation_central_cny": 30.0,
+      "reservation_high_cny": 60.0,
+      "reservation_low_cny": 15.0,
+      "service_key": "rental:camp_chair",
+      "substitution_strength": "high",
+      "value_unit": "one chair for one rental day",
+      "value_unit_kind": "requested_unit_day"
+    },
+    {
+      "alternative_accessibility": "medium",
+      "choice_group": "lightweight_chair",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "high",
+      "reservation_central_cny": 30.0,
+      "reservation_high_cny": 50.0,
+      "reservation_low_cny": 15.0,
+      "service_key": "rental:camp_chair",
+      "substitution_strength": "medium",
+      "value_unit": "one chair for one rental day",
+      "value_unit_kind": "requested_unit_day"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "camp_cookware",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 35.0,
+      "reservation_high_cny": 60.0,
+      "reservation_low_cny": 15.0,
+      "service_key": "rental:camp_cookware",
+      "substitution_strength": "high",
+      "value_unit": "one cookware set for one rental day",
+      "value_unit_kind": "rental_asset_day"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "camp_lantern",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 20.0,
+      "reservation_high_cny": 40.0,
+      "reservation_low_cny": 10.0,
+      "service_key": "rental:camp_lantern",
+      "substitution_strength": "high",
+      "value_unit": "one lantern for one rental day",
+      "value_unit_kind": "rental_asset_day"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "camp_table",
+      "customer_variation": "wide",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 35.0,
+      "reservation_high_cny": 80.0,
+      "reservation_low_cny": 20.0,
+      "service_key": "rental:camp_table",
+      "substitution_strength": "high",
+      "value_unit": "one camp table for one rental day",
+      "value_unit_kind": "rental_asset_day"
+    },
+    {
+      "alternative_accessibility": "medium",
+      "choice_group": "three_season_bag",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "high",
+      "reservation_central_cny": 50.0,
+      "reservation_high_cny": 80.0,
+      "reservation_low_cny": 30.0,
+      "service_key": "rental:sleeping_bag",
+      "substitution_strength": "high",
+      "value_unit": "one sleeping-bag sleeping place for one rental day",
+      "value_unit_kind": "requested_unit_day"
+    },
+    {
+      "alternative_accessibility": "medium",
+      "choice_group": "warm_weather_bag",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 30.0,
+      "reservation_high_cny": 60.0,
+      "reservation_low_cny": 15.0,
+      "service_key": "rental:sleeping_bag",
+      "substitution_strength": "high",
+      "value_unit": "one sleeping-bag sleeping place for one rental day",
+      "value_unit_kind": "requested_unit_day"
+    },
+    {
+      "alternative_accessibility": "medium",
+      "choice_group": "air_mattress",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 30.0,
+      "reservation_high_cny": 60.0,
+      "reservation_low_cny": 20.0,
+      "service_key": "rental:sleeping_pad",
+      "substitution_strength": "high",
+      "value_unit": "one covered sleeping slot for one rental day",
+      "value_unit_kind": "requested_unit_day"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "closed_cell_foam_pad",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 15.0,
+      "reservation_high_cny": 25.0,
+      "reservation_low_cny": 6.0,
+      "service_key": "rental:sleeping_pad",
+      "substitution_strength": "high",
+      "value_unit": "one covered sleeping slot for one rental day",
+      "value_unit_kind": "requested_unit_day"
+    },
+    {
+      "alternative_accessibility": "medium",
+      "choice_group": "self_inflating_pad",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "high",
+      "reservation_central_cny": 35.0,
+      "reservation_high_cny": 60.0,
+      "reservation_low_cny": 20.0,
+      "service_key": "rental:sleeping_pad",
+      "substitution_strength": "medium",
+      "value_unit": "one covered sleeping slot for one rental day",
+      "value_unit_kind": "requested_unit_day"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "compact_tent",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 60.0,
+      "reservation_high_cny": 100.0,
+      "reservation_low_cny": 30.0,
+      "service_key": "rental:tent",
+      "substitution_strength": "medium",
+      "value_unit": "one compact shelter for one rental day",
+      "value_unit_kind": "rental_asset_day"
+    },
+    {
+      "alternative_accessibility": "medium",
+      "choice_group": "family_tent",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "high",
+      "reservation_central_cny": 100.0,
+      "reservation_high_cny": 180.0,
+      "reservation_low_cny": 60.0,
+      "service_key": "rental:tent",
+      "substitution_strength": "high",
+      "value_unit": "one family shelter for one rental day",
+      "value_unit_kind": "rental_asset_day"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "bottled_water",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "low",
+      "reservation_central_cny": 3.0,
+      "reservation_high_cny": 5.0,
+      "reservation_low_cny": 1.5,
+      "service_key": "retail:bottled_water",
+      "substitution_strength": "high",
+      "value_unit": "one 500ml bottle",
+      "value_unit_kind": "retail_sale_unit"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "cleaning_wipes",
+      "customer_variation": "medium",
+      "need_strength": "low",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "low",
+      "reservation_central_cny": 4.0,
+      "reservation_high_cny": 7.0,
+      "reservation_low_cny": 2.0,
+      "service_key": "retail:cleaning_wipes",
+      "substitution_strength": "high",
+      "value_unit": "one sealed box or pack containing 100 wipes",
+      "value_unit_kind": "retail_sale_unit"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "compressed_ration",
+      "customer_variation": "medium",
+      "need_strength": "low",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 3.5,
+      "reservation_high_cny": 5.0,
+      "reservation_low_cny": 2.0,
+      "service_key": "retail:energy_snacks",
+      "substitution_strength": "high",
+      "value_unit": "one 50g individually wrapped serving",
+      "value_unit_kind": "retail_sale_unit"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "snack_portion",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 12.0,
+      "reservation_high_cny": 20.0,
+      "reservation_low_cny": 6.0,
+      "service_key": "retail:energy_snacks",
+      "substitution_strength": "high",
+      "value_unit": "one 50g individually wrapped serving",
+      "value_unit_kind": "retail_sale_unit"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "garbage_bags",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 5.0,
+      "reservation_high_cny": 10.0,
+      "reservation_low_cny": 2.0,
+      "service_key": "retail:garbage_bags",
+      "substitution_strength": "high",
+      "value_unit": "one sealed pack containing 20 bags",
+      "value_unit_kind": "retail_sale_unit"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "instant_food",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 22.0,
+      "reservation_high_cny": 35.0,
+      "reservation_low_cny": 12.0,
+      "service_key": "retail:instant_food",
+      "substitution_strength": "high",
+      "value_unit": "one 250g complete meal",
+      "value_unit_kind": "retail_sale_unit"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "disposable_poncho",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "low",
+      "reservation_central_cny": 5.0,
+      "reservation_high_cny": 10.0,
+      "reservation_low_cny": 2.0,
+      "service_key": "retail:rain_gear",
+      "substitution_strength": "high",
+      "value_unit": "one disposable poncho",
+      "value_unit_kind": "retail_sale_unit"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "reusable_rainwear",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 120.0,
+      "reservation_high_cny": 250.0,
+      "reservation_low_cny": 60.0,
+      "service_key": "retail:rain_gear",
+      "substitution_strength": "medium",
+      "value_unit": "one reusable rainwear item or suit",
+      "value_unit_kind": "retail_sale_unit"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "topical_repellent",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 30.0,
+      "reservation_high_cny": 50.0,
+      "reservation_low_cny": 15.0,
+      "service_key": "retail:repellent",
+      "substitution_strength": "high",
+      "value_unit": "one 100ml topical repellent bottle",
+      "value_unit_kind": "retail_sale_unit"
+    },
+    {
+      "alternative_accessibility": "high",
+      "choice_group": "wearable_repellent",
+      "customer_variation": "medium",
+      "need_strength": "medium",
+      "provenance": "operational_scenario_parameter",
+      "quality_salience": "medium",
+      "reservation_central_cny": 5.0,
+      "reservation_high_cny": 15.0,
+      "reservation_low_cny": 2.0,
+      "service_key": "retail:repellent",
+      "substitution_strength": "high",
+      "value_unit": "one wearable repellent item",
+      "value_unit_kind": "retail_sale_unit"
+    }
+  ],
+  "initial_price_noise_range": [
+    0.9,
+    1.1
+  ],
+  "local_additive_shift_range": [
+    -0.2,
+    0.2
+  ],
+  "local_reservation_range": [
+    0.85,
+    1.15
+  ],
+  "local_segment_share_max_multiplier": 1.2,
+  "need_salience_values": {
+    "high": 0.5,
+    "low": 0.15,
+    "medium": 0.3
+  },
+  "profile_taste_range": [
+    0.95,
+    1.05
+  ],
+  "quality_salience_values": {
+    "high": 1.5,
+    "low": 0.5,
+    "medium": 1.0
+  },
+  "quality_scores": {
+    "economy": -0.5,
+    "premium": 0.5,
+    "standard": 0.0,
+    "unknown": 0.0
+  },
+  "retail_margin_floor": 1.25,
+  "substitution_choice_taste": {
+    "high": 0.05,
+    "low": 0.02,
+    "medium": 0.035
+  },
+  "variation_shapes": {
+    "medium": 4.0,
+    "narrow": 8.0,
+    "wide": 2.0
+  }
+}

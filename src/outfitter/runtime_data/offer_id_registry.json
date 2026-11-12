@@ -1,0 +1,516 @@
+{
+  "entries": [
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_0345a0bfe822c07f929c",
+      "listing_identity_sha256": "9c08bc7438fe9ecc86d6bcc187f43b540fa9249bc5ee6de6dd222665ff9b4a37",
+      "offer_id": "offer-001"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_036f704075f2bdacfd2a",
+      "listing_identity_sha256": "29d43a53116f6df87773d21e064eb7b8ae5fc698bbfbd5d388431559b78cc6ec",
+      "offer_id": "offer-002"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_037f2a7a68eea36ecdb6",
+      "listing_identity_sha256": "272474bee2f223de079695be5c560bd69b18f9a1fe309e491edcf09ec34a09b5",
+      "offer_id": "offer-003"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_03a18104e4ed76ff13f3",
+      "listing_identity_sha256": "f8d867b28621b7a0ae68cf30f791f9d660c3b44f18e5987bc48b04f95903843c",
+      "offer_id": "offer-004"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_05a19a76c5bd51997317",
+      "listing_identity_sha256": "ab90d2bcbcb1ee4c8b62e1127b99c57c07b67041b8943b25ff3e328231c5d582",
+      "offer_id": "offer-005"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_0c304154e741334b3332",
+      "listing_identity_sha256": "bce1172614a6be96a5e28a21315dbeaf4518ed8c3734709fd25f2e92b95c3252",
+      "offer_id": "offer-006"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_0d3d6490c360ea1821c1",
+      "listing_identity_sha256": "37097f5f323a4da99e6904e42d4edb84bc38a5b5130a5117958c9866c7302648",
+      "offer_id": "offer-007"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_10d36dbcbf14609f7bb8",
+      "listing_identity_sha256": "84fe3614724ffa4532638f3c9eb95ca852611e6a705ebc3366a074582d8b50d3",
+      "offer_id": "offer-008"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_13ff0f0e15f56e058e2d",
+      "listing_identity_sha256": "5e950377bd583c383c76ae7a0f78216567f80255f13383a0405e00da26276a9a",
+      "offer_id": "offer-009"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_166d84c736e205842d33",
+      "listing_identity_sha256": "b1e87232a95e74c6cbdbeeb20687feabd2ff5a0ee44739c195786db1df8aeb15",
+      "offer_id": "offer-010"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_1b8e5f4c75e42cb88ff2",
+      "listing_identity_sha256": "e73bbcbad2afed51f056984c11b3cb58e5e7bad95ff9bbd5686c9d16c379e0d0",
+      "offer_id": "offer-011"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_21b5f98f0888ffacf8db",
+      "listing_identity_sha256": "bcc2b81547052ed1d702be3b892dcc6bfff7f7ec75eae6a222a694902a67aca0",
+      "offer_id": "offer-012"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_266de10e6fe252e2c3d8",
+      "listing_identity_sha256": "9b177414052df521be0aee02e97210c3a0b8e762950f87f872a5511e7908703e",
+      "offer_id": "offer-013"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_28248637457ea92e93bb",
+      "listing_identity_sha256": "87ce97617ff4b9794f93417a848134184d7ade140c4e1ad5599e97cc02ed5cf1",
+      "offer_id": "offer-014"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_2998c22789c0c1fa4065",
+      "listing_identity_sha256": "773bf192944790e81ab44e509c126ef2781bd8d42c960defa3019429b26f7ba6",
+      "offer_id": "offer-015"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_2aca79cb93f474a12847",
+      "listing_identity_sha256": "e211c565cb636c4bd51909bb07f53b301c0d941881697aee2c66328318c55866",
+      "offer_id": "offer-016"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_2fd51b0f985f61fe2325",
+      "listing_identity_sha256": "80dbc2bc2ba88da223801a1cac77133877924f82db33329896a29a2a03c467d1",
+      "offer_id": "offer-017"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_38139fe668de4af211e3",
+      "listing_identity_sha256": "4075cb6b7000e0c29f3f4b03036bbc1cf06c2493db6ca802ab4c1529716c3cd1",
+      "offer_id": "offer-018"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_38453b744ce9c974327d",
+      "listing_identity_sha256": "58bb8099555fd9683c6bf25787ac9a285338e539f7e93676b43a36275e4da8f9",
+      "offer_id": "offer-019"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_4316b284978350790ca9",
+      "listing_identity_sha256": "f5f629e9dc211f2362b49d9a6d99536a5c9e9765b67be3138e376be1453eadbd",
+      "offer_id": "offer-020"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_447fe80eb71c3fbe34d8",
+      "listing_identity_sha256": "77377a0c50875bad602d96683a5111f68014f1363946792256baffa5242d2d24",
+      "offer_id": "offer-021"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_45f49efcba07df2b285f",
+      "listing_identity_sha256": "f17c66f1deaffa86010fada36674f5c5ba7bd6b0392d67177b19548552b00193",
+      "offer_id": "offer-022"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_468a34afac31b990b4fe",
+      "listing_identity_sha256": "31531295adbd98ad83d0907959e60bad14bbb5a2c8bec990be79c035439ace68",
+      "offer_id": "offer-023"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_48716ee838d7f43c6c0c",
+      "listing_identity_sha256": "222168d95a577f41046daaa8e8c0857d8e690b80b1ed87ab3aa7a7fb8c21b4ba",
+      "offer_id": "offer-024"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_4a82f2a84d34ff12a034",
+      "listing_identity_sha256": "0854f6a7cf22161f4fe57accd6b7f0e8924c29f8059e807b2fb64cfc4e9101e1",
+      "offer_id": "offer-025"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_4df80095b242dbf81249",
+      "listing_identity_sha256": "07edb301e5fe4c48e8560f0024e98f4b218e6adcd8ca9f86044cd901f615bb3c",
+      "offer_id": "offer-026"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_4e511b6470d8d51b25c5",
+      "listing_identity_sha256": "d72734a4ef628a0d70731b916a1d467209e89ee42aa736a341ccc9011e103404",
+      "offer_id": "offer-027"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_514fe515acc4a27a89cf",
+      "listing_identity_sha256": "04eb45e9ea29026021225a50d68bfce74bf11244ab6f284ab691774b979df15a",
+      "offer_id": "offer-028"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_5b96538cd01c3d3a012e",
+      "listing_identity_sha256": "35d426bf513cdcd1caa31b8422fb4b117e717e593799f469cf610185d650c231",
+      "offer_id": "offer-029"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_5bae517e19e5dbbb2fb6",
+      "listing_identity_sha256": "650a488ba0d49e5f7a58d2757f7d178e83fc2ba856f79a79277670d4a0ced593",
+      "offer_id": "offer-030"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_5bbda07191fa4b395aa9",
+      "listing_identity_sha256": "cf2eb664f86400c3ae0ebb96aaf8941a81a67137f139211aab42b89f3f2454a2",
+      "offer_id": "offer-031"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_5d8bcbb51f148bde2946",
+      "listing_identity_sha256": "536ef20ff32ebdf594c8c620f79f6a4d2e150c5a010e799e5851dbe420655f6d",
+      "offer_id": "offer-032"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_64925ceedeb05f82590b",
+      "listing_identity_sha256": "8b3f0286bbe01cbc02d9a64a6172a00b5f471ab413b2da53379e269e19a56746",
+      "offer_id": "offer-033"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_658f2c536e2cf12c7fec",
+      "listing_identity_sha256": "a4f3e0131a3e0cf2045de17db4761996b047cc313b59240e27c87056533ec2de",
+      "offer_id": "offer-034"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_6a3f0fb649fdfdd8ca9f",
+      "listing_identity_sha256": "2f33b13322863ea4437374e9bcc56d250e3eb22840ef669e6abf280a42aa683c",
+      "offer_id": "offer-035"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_6b5737e03359e2be3aac",
+      "listing_identity_sha256": "00b597f3d5ecfaf6f1f09f5008619a702c5f19d645ea8f2103810248e29783a7",
+      "offer_id": "offer-036"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_7112dc8b46d57745a2b7",
+      "listing_identity_sha256": "71ef96cb7dba8c8201ff30efc2d6dd1808dd60a7bd716bf0028f6ce87294a587",
+      "offer_id": "offer-037"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_72e409fa0636f5a597ca",
+      "listing_identity_sha256": "825709203d0bf7a224819e2558b236061758b425cd5e604a68cc5ea3227d8bc0",
+      "offer_id": "offer-038"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_7f20db095e88a0fd80e5",
+      "listing_identity_sha256": "84cdaf3fcdee3485126771020c80cce1671c87351f2e24ebc6828100b2df6a90",
+      "offer_id": "offer-039"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_830fbac74d9d73e5de40",
+      "listing_identity_sha256": "b9426a7d56ed2b87de2cc760f79e8f31abb15226eaec347b1924cd5dc831b38b",
+      "offer_id": "offer-040"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_8850a6637d2d5a23611a",
+      "listing_identity_sha256": "dec5c951ea5f918df66359df8d1ec4e78465b8a4dc2f00ed7080a9f79ee4b905",
+      "offer_id": "offer-041"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_8999dab18a148af6e833",
+      "listing_identity_sha256": "f4d4dbba0f402a2a8c9d1a83771eef6c6862299c5cc2cbbd82d49779c4ec6392",
+      "offer_id": "offer-042"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_8a91ae27413ce316a9e4",
+      "listing_identity_sha256": "03e7099285e876866d5c28f20371358ced56517a39ddf4ba166e7b0a6d43db69",
+      "offer_id": "offer-043"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_8afe6f3a4f897466fb60",
+      "listing_identity_sha256": "432cbd497ce4731270d5e600456351ac43b040cf65d8d3bbd298ad162049a9e5",
+      "offer_id": "offer-044"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_8f506c3a6e53ea688f01",
+      "listing_identity_sha256": "a3072ca3bc6748277df40e25fad6e6aa475f61dafb1fab3bf157562b9dc149a8",
+      "offer_id": "offer-045"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_96a1fe6c06fe79a1dd33",
+      "listing_identity_sha256": "cb87801be23102b98e42476ced4bb9230ba5f17a2c7a4f61684100f90e377373",
+      "offer_id": "offer-046"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_9759708c3bd9b2237cde",
+      "listing_identity_sha256": "cd57c9e9065d6e90db998fd99704669d764333c6def04afb714d791375f36abd",
+      "offer_id": "offer-047"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_9810b4572b859580cc5e",
+      "listing_identity_sha256": "ab91473b0e995166bb3e618980a54a3f523c7f1d1aa6b63cafbb38bdc94bf029",
+      "offer_id": "offer-048"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_9aa7a45fe763d9d2927c",
+      "listing_identity_sha256": "7038ea9e48813b9c1bac0d2c949cb457b01cce74168dd4e7b929f60843d767f2",
+      "offer_id": "offer-049"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_9abd7d4f28b4817154ab",
+      "listing_identity_sha256": "bdc7dd5b4246c2e53aa3d4d519f858af7660fd4ee64d51569c864bd936ec06ef",
+      "offer_id": "offer-050"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_9dff97762d661e264d83",
+      "listing_identity_sha256": "c87a221081e21b438988c2df8dcb1392cfda65fecf687299f280cd8af5d43908",
+      "offer_id": "offer-051"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_a02f895ab8fa4d079749",
+      "listing_identity_sha256": "35be3d59fee7e7646e552ef4f4083e2b8132a2e0bfb4dbeeb3f23fffadf56686",
+      "offer_id": "offer-052"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_a745c249bdfa7ae99c9a",
+      "listing_identity_sha256": "e897f90b201a9e164f7ebb0d4bfbe734f02935be397388906d4fe80b4cb50c80",
+      "offer_id": "offer-053"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_a76254b055a07d704bf8",
+      "listing_identity_sha256": "98ba7934478fa0c52abc778251546d409c655d753afbf0e42531d48353461242",
+      "offer_id": "offer-054"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_ac5f36d0ed47ffa55dfe",
+      "listing_identity_sha256": "39a03c28e345015d73b8bf6e597f5d2494a3b85c6051bf9b8e5c20df6c805d5f",
+      "offer_id": "offer-055"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_b22bd1c67f5f9b256a4c",
+      "listing_identity_sha256": "d05e804f7048b423788a450660a3e3dd671e8a483e82e1c89f59fe77093238ae",
+      "offer_id": "offer-056"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_b22c157031153d780013",
+      "listing_identity_sha256": "5a703f197e408e144bf4fd527e95e65c5e6764edbd6626c95b2a949c000731cb",
+      "offer_id": "offer-057"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_b27b1a87a5a2aa94ca82",
+      "listing_identity_sha256": "675ad6b486360a909d4a37ea3a0d286c3f07cd01f744a63c80bd002e6cadb7e3",
+      "offer_id": "offer-058"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_b2ae5427b0c541f138db",
+      "listing_identity_sha256": "63efeba8a62a870376d69ef4a0fefdc329fd95d54ede5fc1a616c7b7e6d3a4d1",
+      "offer_id": "offer-059"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_bd60ace9b92df1cb8f85",
+      "listing_identity_sha256": "96e666dac2e36d1f379eacd21593653af1cf1d228f159d33c3d17cd89e212551",
+      "offer_id": "offer-060"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_bf4e25c0d482c09b9bec",
+      "listing_identity_sha256": "4c654976d1aa39a346aa1be04a3b06369bd326e4dbfdbe7f0395dbaa470c0487",
+      "offer_id": "offer-061"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_c39ed94915f318b0e8f2",
+      "listing_identity_sha256": "de1e376505ad9c25fe738572747381f11e4b800cf00878e6c82e1ea4300b1f3e",
+      "offer_id": "offer-062"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_c5329586bcd9fec21e71",
+      "listing_identity_sha256": "06f358694bc05acf88484f38e9ddf7c95b0c8c5e2245f9b230075de078c185bb",
+      "offer_id": "offer-063"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_c5703c74382ebf8844c1",
+      "listing_identity_sha256": "bbef770eff1da88a4717a4605c8124a1c34612794dbcf55997847a4090f375be",
+      "offer_id": "offer-064"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_c5c035f76d070bbffabc",
+      "listing_identity_sha256": "897a6da4cc06caf20a495c53688564413367d4331025df955e62f28fe1c42d28",
+      "offer_id": "offer-065"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_c63d1b39c1295838a890",
+      "listing_identity_sha256": "7fa9f6c4d0fe9375fd5e0a1d0c8dfa748dc8eba31868030226867645dee3a7dd",
+      "offer_id": "offer-066"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_cff421e13e6f7b13d9a7",
+      "listing_identity_sha256": "62465c65189727db3351c83cb68a019016ff613a616688e1303c199bbbde3471",
+      "offer_id": "offer-067"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_d0edb9927676c882d367",
+      "listing_identity_sha256": "4f8275a88ef60c0ea57b8f0cb0f781685c6abd6c8d60dd367136b5a428d76f5d",
+      "offer_id": "offer-068"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_d1ed9f379617125dc79f",
+      "listing_identity_sha256": "a67da058896887603437e5f9b01d740084cfd9d8b304df112a4f973f55298f4c",
+      "offer_id": "offer-069"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_d40e419b4c14e71c4dd9",
+      "listing_identity_sha256": "10d32d06ac960a99a9305e24e04b1755ac328887b0a7f9bb4e7f05d78053d85b",
+      "offer_id": "offer-070"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_d4a70a27c2e43593ebe5",
+      "listing_identity_sha256": "13be3c23f2254f5b42ac3775a180b7c06a8931a949885c4a04c3a1cd01215f02",
+      "offer_id": "offer-071"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_dc4ad6a9e5ed24948205",
+      "listing_identity_sha256": "60786222c5b82fa5f33dc5d07ab73cb0be9bda1ce12d7450d4a4a608235fa769",
+      "offer_id": "offer-072"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_e604de99f374db4ac057",
+      "listing_identity_sha256": "57fcf53153277b5796f2e54a55ea6b4239582c6a7e9f808947f5e0ad0bd62606",
+      "offer_id": "offer-073"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_e62b1ba52e696961469c",
+      "listing_identity_sha256": "cbd57d24fca0e94f4290afad6e5d3f2e985fdaa928db6256c4337af874d0cb91",
+      "offer_id": "offer-074"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_e6d00ee907f6445f7e27",
+      "listing_identity_sha256": "95ba16a45e484d5052057e0da5ca020b661e5f01765dfcda4b261d6953ba961f",
+      "offer_id": "offer-075"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_e836d2cba64a25789e47",
+      "listing_identity_sha256": "b6a5967eea68e9088b15c2d8dfafe12ddff149f9baa4d0e02f4086a4c21af0a6",
+      "offer_id": "offer-076"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_ece148ad41f7cab2fbd0",
+      "listing_identity_sha256": "5868b9a4ea93a2617542583da560e8e6db2e1b0ffddd85525134172bb6095e64",
+      "offer_id": "offer-077"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_ef5f3674621c9e654d97",
+      "listing_identity_sha256": "46cf388b948e7f9460e16e6128c0f600543aa793e1e66986793c5619d898e001",
+      "offer_id": "offer-078"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_f0d15fcc600340f7d338",
+      "listing_identity_sha256": "534d5902f1f728f9beabf711c099fbb112746a3cdfae33d438cbddbece6048dc",
+      "offer_id": "offer-079"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_f4c7d8c16428edbac8ea",
+      "listing_identity_sha256": "cb853ae82a5c661056806943d18d197ef0cecbf50832493d5f2ac20fc4bacc82",
+      "offer_id": "offer-080"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_f623db39dca134dab828",
+      "listing_identity_sha256": "9615d9b60cbadf114b9551976ad5e7e00112d3b48cd88f62e0bfbfe6ba127f17",
+      "offer_id": "offer-081"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_f70885456899b36df449",
+      "listing_identity_sha256": "1ba41ab871be5e302b61aceede24f2b616b93e146dc5d37530ece650f08f9fc4",
+      "offer_id": "offer-082"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_fa5a5ffc275eb35e6e3b",
+      "listing_identity_sha256": "3fe8f400eefb53c6718cb4ede4271ea193e00b8b2e747d70aeea7661840242fa",
+      "offer_id": "offer-083"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_fd97546cd7f42bdfbe22",
+      "listing_identity_sha256": "7fd3466ea1260b8bc1441cdb693bb3c5d34de880a56f5f65d89f22f550ed2897",
+      "offer_id": "offer-084"
+    },
+    {
+      "active": true,
+      "first_seen_source_offer_id": "ofv_ff18b2b68929805b8a4d",
+      "listing_identity_sha256": "11f2791540ca6caeab1c85248ea24665d5b73eb84a346264371c3b7dd2c08cab",
+      "offer_id": "offer-085"
+    }
+  ],
+  "format": "outfitter-offer-id-registry-v1",
+  "policy": "append_only; removed numbers are never reused; catalog reorder never renumbers"
+}

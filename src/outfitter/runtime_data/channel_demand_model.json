@@ -1,0 +1,257 @@
+{
+  "cash_scale_unit": "CNY per complete customer request",
+  "channel_shock_scale": 0.6,
+  "channel_taste_scale": 0.55,
+  "deadline_value_scale": 1.0,
+  "deposit_friction_rate": 0.05,
+  "existing_option_bonus": 0.75,
+  "format": "outfitter-exact-offer-channel-demand-v5-request-bundle",
+  "future_use_credit": 0.0,
+  "group_policies": [
+    {
+      "choice_group": "comfort_chair",
+      "quality_salience": "high",
+      "service_key": "rental:camp_chair",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "lightweight_chair",
+      "quality_salience": "high",
+      "service_key": "rental:camp_chair",
+      "substitution_strength": "medium"
+    },
+    {
+      "choice_group": "camp_cookware",
+      "quality_salience": "medium",
+      "service_key": "rental:camp_cookware",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "camp_lantern",
+      "quality_salience": "medium",
+      "service_key": "rental:camp_lantern",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "camp_table",
+      "quality_salience": "medium",
+      "service_key": "rental:camp_table",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "three_season_bag",
+      "quality_salience": "high",
+      "service_key": "rental:sleeping_bag",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "warm_weather_bag",
+      "quality_salience": "medium",
+      "service_key": "rental:sleeping_bag",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "air_mattress",
+      "quality_salience": "medium",
+      "service_key": "rental:sleeping_pad",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "closed_cell_foam_pad",
+      "quality_salience": "medium",
+      "service_key": "rental:sleeping_pad",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "self_inflating_pad",
+      "quality_salience": "high",
+      "service_key": "rental:sleeping_pad",
+      "substitution_strength": "medium"
+    },
+    {
+      "choice_group": "compact_tent",
+      "quality_salience": "medium",
+      "service_key": "rental:tent",
+      "substitution_strength": "medium"
+    },
+    {
+      "choice_group": "family_tent",
+      "quality_salience": "high",
+      "service_key": "rental:tent",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "bottled_water",
+      "quality_salience": "low",
+      "service_key": "retail:bottled_water",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "cleaning_wipes",
+      "quality_salience": "low",
+      "service_key": "retail:cleaning_wipes",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "compressed_ration",
+      "quality_salience": "medium",
+      "service_key": "retail:energy_snacks",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "snack_portion",
+      "quality_salience": "medium",
+      "service_key": "retail:energy_snacks",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "garbage_bags",
+      "quality_salience": "medium",
+      "service_key": "retail:garbage_bags",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "instant_food",
+      "quality_salience": "medium",
+      "service_key": "retail:instant_food",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "disposable_poncho",
+      "quality_salience": "low",
+      "service_key": "retail:rain_gear",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "reusable_rainwear",
+      "quality_salience": "medium",
+      "service_key": "retail:rain_gear",
+      "substitution_strength": "medium"
+    },
+    {
+      "choice_group": "topical_repellent",
+      "quality_salience": "medium",
+      "service_key": "retail:repellent",
+      "substitution_strength": "high"
+    },
+    {
+      "choice_group": "wearable_repellent",
+      "quality_salience": "medium",
+      "service_key": "retail:repellent",
+      "substitution_strength": "high"
+    }
+  ],
+  "optional_need_intercept": 4.4,
+  "ownership_burden": 0.1,
+  "profile_shock_scale": 0.25,
+  "rental_budget_tail_coefficient": 1.0,
+  "rental_contract_cash_salience": 2.2,
+  "rental_date_guarantee_rate": 0.12,
+  "rental_delivery_lateness_loss_rate": 0.08,
+  "rental_duration_budget_exponent": 1.0,
+  "rental_duration_value_exponent": 0.7,
+  "rental_duration_value_rate": 0.45,
+  "rental_flexibility_value_rate": 0.3,
+  "rental_future_use_credit_rate": 0.8,
+  "rental_immediate_value_rate": 0.08,
+  "rental_log_ratio_clip": [
+    -2.302585092994046,
+    0.6931471805599453
+  ],
+  "rental_party_budget_exponent": 0.5,
+  "rental_quantity_value_exponent": 0.8,
+  "rental_request_cash_salience": 4.2,
+  "rental_storage_burden_rate": 0.65,
+  "rental_weather_disutility_rate": 0.55,
+  "request_budget_bounds": [
+    0.6,
+    1.6
+  ],
+  "request_budget_sigma": 0.25,
+  "required_need_intercept": 6.9,
+  "retail_immediate_value_rate": 0.35,
+  "retail_unmet_need_loss_rate": 1.0,
+  "return_burden": 1.6,
+  "segments": {
+    "balanced": {
+      "absolute_weight_multiplier": 1.0,
+      "cash_scale_cny": 10.0,
+      "functional_weight": 1.0,
+      "markup_weight_multiplier": 1.0,
+      "quality_weight": 1.0,
+      "rental_weight_multiplier": 1.0,
+      "share": 0.35
+    },
+    "need_driven": {
+      "absolute_weight_multiplier": 0.85,
+      "cash_scale_cny": 12.0,
+      "functional_weight": 1.25,
+      "markup_weight_multiplier": 0.85,
+      "quality_weight": 0.8,
+      "rental_weight_multiplier": 0.9,
+      "share": 0.15
+    },
+    "price_sensitive": {
+      "absolute_weight_multiplier": 1.25,
+      "cash_scale_cny": 7.0,
+      "functional_weight": 1.0,
+      "markup_weight_multiplier": 1.25,
+      "quality_weight": 0.6,
+      "rental_weight_multiplier": 1.15,
+      "share": 0.35
+    },
+    "quality_seeking": {
+      "absolute_weight_multiplier": 0.8,
+      "cash_scale_cny": 13.0,
+      "functional_weight": 1.1,
+      "markup_weight_multiplier": 0.8,
+      "quality_weight": 1.5,
+      "rental_weight_multiplier": 0.85,
+      "share": 0.15
+    }
+  },
+  "worlds": {
+    "base": {
+      "absolute_price_weight": 2.6,
+      "common_price_beta": 3.0,
+      "online_arrival_cdf_day0": 0.05,
+      "online_arrival_cdf_day1": 0.35,
+      "online_arrival_cdf_day3": 0.9,
+      "online_friction": 0.2,
+      "rental_convenience": 0.3,
+      "rental_relative_weight": 1.2,
+      "retail_context_multiplier": 1.0,
+      "retail_markup_weight": 3.0,
+      "retail_store_convenience": 0.2,
+      "world_id": "base"
+    },
+    "conservative": {
+      "absolute_price_weight": 2.8,
+      "common_price_beta": 4.0,
+      "online_arrival_cdf_day0": 0.08,
+      "online_arrival_cdf_day1": 0.5,
+      "online_arrival_cdf_day3": 0.95,
+      "online_friction": 0.05,
+      "rental_convenience": 0.1,
+      "rental_relative_weight": 1.5,
+      "retail_context_multiplier": 0.85,
+      "retail_markup_weight": 3.5,
+      "retail_store_convenience": 0.08,
+      "world_id": "conservative"
+    },
+    "convenience-heavy": {
+      "absolute_price_weight": 2.4,
+      "common_price_beta": 2.5,
+      "online_arrival_cdf_day0": 0.03,
+      "online_arrival_cdf_day1": 0.25,
+      "online_arrival_cdf_day3": 0.8,
+      "online_friction": 0.3,
+      "rental_convenience": 0.7,
+      "rental_relative_weight": 1.0,
+      "retail_context_multiplier": 1.15,
+      "retail_markup_weight": 2.5,
+      "retail_store_convenience": 0.4,
+      "world_id": "convenience-heavy"
+    }
+  }
+}

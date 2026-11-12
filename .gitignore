@@ -1,0 +1,36 @@
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+*.egg-info/
+
+# Secrets and machine-local provider configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.bundle
+*.pkl
+configs/local*.yaml
+
+# Benchmark outputs: never commit trajectories
+runs/
+logs/
+analysis/
+artifacts/
+*.sqlite
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Generated reports and editor/OS files
+dist/
+build/
+.DS_Store
+.idea/
+.vscode/
