@@ -2,8 +2,12 @@
 
 ### Evaluating LLM Agents on Long-Horizon Resource Allocation and Commitment Coordination
 
+[![arXiv](https://img.shields.io/badge/arXiv-2611.17933-b31b1b.svg)](https://arxiv.org/abs/2611.17933)
 [![Python](https://img.shields.io/badge/Python-3.11%E2%80%933.13-blue)](pyproject.toml)
 [![Code license](https://img.shields.io/badge/Code-Apache--2.0-green)](LICENSE)
+
+Official implementation of **[OutfitterBench: Evaluating LLM Agents on
+Long-Horizon Resource Allocation and Commitment Coordination](https://arxiv.org/abs/2611.17933)**.
 
 OutfitterBench is a simulated outdoor-equipment rental business in which an
 agent manages **200 days of operations**, followed by **14 automatic settlement
@@ -22,9 +26,10 @@ ships an independently constructed public weather dataset,
 Results from the two inputs must be identified separately. See
 [weather data and versioning](docs/WEATHER.md).
 
+[Paper](https://arxiv.org/abs/2611.17933) · [PDF](https://arxiv.org/pdf/2611.17933) ·
 [Quick start](#quick-start) · [Run an agent](#run-an-llm-agent) ·
 [Evaluation](#scoring-and-trajectory-analysis) · [Paper results](#paper-results) ·
-[Data](#data-and-license) · [Contributing](CONTRIBUTING.md)
+[Data](#data-and-license) · [Contributing](CONTRIBUTING.md) · [Citation](#citation)
 
 ## What does OutfitterBench test?
 
@@ -63,8 +68,6 @@ cd OutfitterBench
 uv sync --extra dev --frozen
 uv run outfitter-bench --help
 ```
-
-Until the public release, cloning requires GitHub access to this private repository.
 
 Try three days with the Calendar rule baseline, **without an API key**:
 
@@ -188,6 +191,9 @@ for definitions, version checks, parallelism, and replay-cache behavior.
 
 ## Paper results
 
+The figure below summarizes the results reported in our
+[paper](https://arxiv.org/abs/2611.17933).
+
 <p align="center">
   <img src="assets/mean_value_paths.png" width="100%" alt="Historical paper results under the original weather, averaged over seeds 42 and 73">
 </p>
@@ -241,12 +247,22 @@ alongside [data provenance and licensing](docs/DATA.md). The code is
 [Apache-2.0](LICENSE); third-party data retain their own terms and attribution
 requirements.
 
-Maintainers should complete the [public-release checklist](docs/RELEASE_CHECKLIST.md)
-before changing visibility. This preparation keeps the repository private.
+## Contributing
 
-## Contributing and citation
+See [CONTRIBUTING.md](CONTRIBUTING.md) for testing and change guidelines.
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for testing and change guidelines. The paper
-is **OutfitterBench: Evaluating LLM Agents on Long-Horizon Resource Allocation and
-Commitment Coordination**. Its arXiv link and BibTeX entry will be added when the
-preprint is available.
+## Citation
+
+If you use OutfitterBench in your research, please cite:
+
+```bibtex
+@misc{huang2026outfitterbench,
+  title         = {{OutfitterBench}: Evaluating {LLM} Agents on Long-Horizon Resource Allocation and Commitment Coordination},
+  author        = {Jie Huang and Yuecheng Hong and Yao Chen and Shengding Jiao and Xudong Liu and Qiang Ye},
+  year          = {2026},
+  eprint        = {2611.17933},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.AI},
+  url           = {https://arxiv.org/abs/2611.17933}
+}
+```
